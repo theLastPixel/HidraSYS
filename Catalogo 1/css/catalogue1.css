@@ -1,4 +1,3 @@
-
 /*
 ====================================================================================
                                CONTENIDO PRINCIPAL                                 
@@ -7,19 +6,14 @@
 /* BODY */
 body{
     
-    padding: 0;
     z-index: -1;
-    position: fixed;
+    
     width: 100%;
     height: 100%;
-    margin: 0;
     background-image: url("../images/wallpaper.png");
     background-size: cover;
     background-attachment:fixed; 
     background-position: center 0px;
-    padding: 0;
-    margin:0;
-    
     }
 /* APLICACION A TODO EL CONTENIDO DEL MAIN */
 main{
@@ -34,19 +28,12 @@ main{
   grid-gap: 4px;
   grid-template: repeat(40,1fr)/repeat(40,1fr);
 }
-
-
 /*APLIACACION A TODOS LOS DIV DENTRO DE .grid-container-main*/
-
-
 /*
 ====================================================================================
                                   BOX AVATAR                   
 ====================================================================================
 */
-
-
-
 .container-box-avatar{
     
   grid-column: 16/26;
@@ -266,37 +253,4 @@ box-shadow: 40px 0px 3px 9px rgba(255,255,255,0.24);
 
 }*/ 
 
-button:hover{
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.8s;
-  opacity: 0.8;
-}
 
-@media screen and (max-width: 768px){
-
-  .container-box-avatar{
-
-  }
-
-  .grid-container-main-login{
- 
-}
-  
-}
-
-@media screen and (max-width: 450px){
-  .grid-container{
-  
-  }
-  .container-box-avatar { 
-  
-  }
-  .grid-container-main-login { 
-  
-  }
-  button{
- 
-  }
-
-
-}
