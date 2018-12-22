@@ -4,7 +4,6 @@
                                CONTENIDO PRINCIPAL                                 
 ====================================================================================
 */
-
 /* BODY */
 body{
     
@@ -15,16 +14,13 @@ body{
     height: 100%;
     margin: 0;
     background-image: url("../images/wallpaper.png");
-      background-size: cover;
+    background-size: cover;
     background-attachment:fixed; 
     background-position: center 0px;
-    overflow: hidden;
     padding: 0;
     margin:0;
     
-}
-
-
+    }
 /* APLICACION A TODO EL CONTENIDO DEL MAIN */
 main{
   -webkit-transition-duration: 0.4s;
@@ -41,9 +37,6 @@ main{
 
 
 /*APLIACACION A TODOS LOS DIV DENTRO DE .grid-container-main*/
-.grid-container-main div{
-
-}
 
 
 /*
@@ -100,12 +93,10 @@ grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
                                   GRID CATALOGOS                 
 ====================================================================================
 */
-
-
 .img-valvdir{
   background-image: url("../images/valvdir.jpg");
   grid-column: 2/3;
-  grid-row: 8/10;
+  grid-row: 4/6;
   font-size: 1.5vw;
   margin: 0;
   padding: 0;
@@ -121,7 +112,7 @@ border-radius: 200px 200px 200px 200px;
 .img-bombeng{
     background-image: url("../images/bombeng.jpg");
     grid-column: 5/6;
-  grid-row: 8/10;
+  grid-row: 4/6;
   font-size: 1.5vw;
   margin: 0;
   padding: 0;
@@ -130,15 +121,13 @@ border-radius: 200px 200px 200px 200px;
     background-repeat: no-repeat;
 background-size: 100% 100%;
 box-shadow: 18px 15px 5px 0px rgba(54,54,54,1);
-border-radius: 200px 200px 200px 200px;  
-    
+border-radius: 200px 200px 200px 200px;     
 }
-
-
 .grid-container-lcmobil{
   /*Posicion sobre GRID MAIN*/
+    background-color: rgba(0,0,0,0.5);
   grid-column: 6/36;
-  grid-row: 8/19;
+  grid-row: 8/30;
   /*Template GRID*/
   display: grid;
   grid-template-columns: repeat(20,1fr);
@@ -151,7 +140,7 @@ border-radius: 200px 200px 200px 200px;
 .grid-container-lcindustrial{
   /*Posicion sobre GRID MAIN*/
   grid-column: 6/36;
-  grid-row: 25/32;
+  grid-row: 35/45;
   /*Template GRID*/
   display: grid;
   grid-template-columns: repeat(20,1fr);
