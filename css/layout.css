@@ -51,14 +51,34 @@ main{
 #menu-box-1{
     grid-column: 2 / 3;
 }
+#menu-box-1 > img{
+    grid-column: 2 / 3;
+    height: auto;
+    width: 20%;
+}
 #menu-box-2{
     grid-column: 4 / 5;
+}
+#menu-box-2 > img{
+    grid-column: 2 / 3;
+    height: auto;
+    width: 20%;
 }
 #menu-box-3{
     grid-column: 6 / 7;
 }
+#menu-box-3 > img{
+    grid-column: 2 / 3;
+    height: auto;
+    width: 20%;
+}
 #menu-box-4{
     grid-column: 8 / 9;
+}
+#menu-box-4 > img{
+    grid-column: 2 / 3;
+    height: auto;
+    width: 20%;
 }
 
 /*
