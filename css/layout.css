@@ -1,0 +1,259 @@
+/*
+====================================================================================
+                            CONTENEDORES PRINCIPALES                               
+====================================================================================
+*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+main{
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.grid-total{
+    display: grid;
+    grid-template: repeat(40, 1fr) / repeat(40, 1fr);
+    grid-gap: 2px;
+    height: 100vh;
+}
+
+/*
+====================================================================================
+                                        HEADER                                
+====================================================================================
+*/
+
+.grid-total-menu{
+    grid-row: 1 / 6;
+    grid-column: 1 / -1;
+    background-color: transparent;
+    display: grid;
+    grid-template: 1fr 100fr 1fr / 5fr 25fr 50fr 1fr 25fr 50fr 1fr 25fr 50fr 1fr 25fr 50fr 1fr 5fr 1fr;
+    grid-gap: 0px;
+    
+    
+}
+
+.menu-box-lbl-all{
+    background-color: rgb(87, 139, 163);
+    margin: 0;
+    padding: 0;
+    grid-row: 2 / 3;
+    display: flex;    
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-box-img-all{
+    background-color: rgb(87, 139, 163);
+    margin: 0;
+    padding: 0;
+    grid-row: 2 / 3;
+    height: auto;
+    width: 100%;
+}
+
+/*HOME*/
+#menu-box-img-home{
+    grid-column: 2 / 3;
+}
+#menu-box-lbl-home{
+    grid-column: 3 / 4;
+}
+
+/*ABOUT*/
+#menu-box-img-about{
+    grid-column: 5 / 6;
+}
+#menu-box-lbl-about{
+    grid-column: 6 / 7;
+}
+
+/*CATALOGUE*/
+#menu-box-img-catalogue{
+    grid-column: 8 / 9;
+}
+#menu-box-lbl-catalogue{
+    grid-column: 9 / 10;
+}
+
+/*CONTACT*/
+#menu-box-img-contact{
+    grid-column: 11 / 12;
+}
+#menu-box-lbl-contact{
+    grid-column: 12 / 13;
+}
+
+
+/*
+====================================================================================
+                                    FOOTER                                
+====================================================================================
+*/
+
+.grid-total-footer{
+    grid-row: 27 / -1;
+    grid-column: 1 / -1;    
+    background-color: rgb(33, 33, 33);
+    display: grid;
+    grid-template: 1fr 10fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr/ repeat(30, 1fr);
+    grid-gap: 5px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-box-all{
+    background-color: rgb(104, 177, 137);
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.3vw;
+    display: flex;
+    color: white;
+    background-color: transparent;
+}
+
+/*INFORMATION*/
+#footer-box-text-information{
+    font-size: 1vw; grid-row: 2/3; 
+    grid-column: 8/24;
+    text-align: center;
+}
+
+/*///////////////NOMBRE//////////////*/
+#footer-box-lbl-name{
+    align-items: center;
+    grid-row: 4/5; grid-column: 7/9;
+    border: 2px solid white;
+}
+
+#footer-box-txt-name{
+    grid-row: 4/5; grid-column: 9/15;
+    border: 2px solid white;
+}
+#footer-box-lbl-name:hover{
+    border: 2px solid #FFBD00;
+}
+
+#footer-box-txt-name:hover{
+    border: 2px solid #FFBD00;
+}
+
+#footer-box-lbl-name:hover + #footer-box-txt-name{
+    border: 2px solid #FFBD00;
+}
+
+#footer-box-txt-name:hover + #footer-box-lbl-name{
+    border: 2px solid #FFBD00;
+}
+
+/*///////////////EMAIL//////////////*/
+#footer-box-lbl-email{
+    align-items: center;
+    grid-row: 4/5; grid-column: 18/20;
+    border: 2px solid white;
+}
+#footer-box-txt-email{
+    grid-row: 4/5; grid-column: 20/26;
+    border: 2px solid white;
+}
+
+/*///////////////MENSAJE//////////////*/
+#footer-box-lbl-message{
+    align-items: center;
+    grid-row: 6/7; grid-column: 7/9;
+    border: 2px solid white;
+}
+#footer-box-txtArea-message{
+    grid-row: 6/7; grid-column: 9/28;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/*///////////////ENVIAR//////////////*/
+#footer-box-btn-send{
+    grid-row: 8/9; grid-column: 13/19;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/*///////////////ICONS//////////////*/
+
+/*FACEBOOK*/
+#footer-box-icon-facebook{
+    grid-row: 10/11; grid-column: 14/15;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#footer-box-icon-facebook:hover{
+    height: auto;
+    width: 100%;
+    -webkit-filter: none;
+    filter: none;
+}
+
+/*YOUTUBE*/
+#footer-box-icon-youtube{
+    grid-row: 10/11; grid-column: 15/16;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#footer-box-icon-youtube:hover{
+    height: auto;
+    width: 100%;
+    -webkit-filter: none;
+    filter: none;
+}
+/*WHATSAPP*/
+#footer-box-icon-whatsapp{
+    grid-row: 10/11; grid-column: 16/17;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#footer-box-icon-whatsapp:hover{
+    height: auto;
+    width: 100%;
+    -webkit-filter: none;
+    filter: none;
+}
+
+/*PINTERIST*/
+#footer-box-icon-pinterist{
+    grid-row: 10/11; grid-column: 17/18;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#footer-box-icon-pinterist:hover{
+    height: auto;
+    width: 100%;
+    -webkit-filter: none;
+    filter: none;
+}
+
+/*COPYRIGHT*/
+#footer-box-text-copyRight{
+    grid-row: 12/13; grid-column: 1/-1;
+    font-size: 1vw;
+    text-align: center;
+}
