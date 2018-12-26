@@ -1,0 +1,361 @@
+/*
+====================================================================================
+                               CONTENIDO PRINCIPAL                                 
+====================================================================================
+*/
+/* BODY */
+body{
+    
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/wallpaper.png");
+    background-size: cover;
+    background-attachment:fixed; 
+    background-position: center 0px;
+    }
+/*APLIACACION A TODOS LOS DIV DENTRO DE .grid-container-main*/
+/*
+====================================================================================
+                                  BOX AVATAR                   
+====================================================================================
+*/
+.container-box-avatar{
+  grid-column: 16/26;
+  grid-row: 2/4;
+  display: grid;
+grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
+}
+
+.lbllogo{
+  grid-column: 1/5;
+  grid-row:1/2;
+    display: grid;
+    text-align: center;
+    font-size: 5vw;
+    font-family: Impact;
+    color: white;
+    opacity: 0.9;
+}
+
+.lbl-lcmobil{
+    border-top: 9px solid #FFBD00;
+  grid-column: 1/5;
+  grid-row:1/2;
+    display: grid;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Impact;
+    color: white;
+    opacity: 0.9;
+}
+
+.lbl-lcindustrial{
+    border-top: 9px solid #FFBD00;
+  grid-column: 1/6;
+  grid-row:1/2;
+    display: grid;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Impact;
+    color: white;
+    opacity: 0.9;
+}
+
+/*
+====================================================================================
+                                  GRID CATALOGOS                 
+====================================================================================
+*/
+.img-valvdir{
+  background-image: url("../images/valvdir.jpg");
+  grid-column: 2/2;
+  grid-row: 4/6;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+ box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+border-radius: 200px 200px 200px 200px;  
+    
+}
+
+.img-bombeng{
+    background-image: url("../images/bombeng.jpg");
+    grid-column: 6/7;
+  grid-row: 4/6;
+  font-size: 1.5vw;
+  margin: 0;
+  left: 60px;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+ box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+border-radius: 200px 200px 200px 200px;     
+}
+
+.img-pdcil{
+    background-image: url("../images/pdcil.jpg");
+    grid-column: 10/11;
+  grid-row: 4/6;
+  font-size: 1.5vw;
+  margin: 0;
+  left: 60px;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+ box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+border-radius: 200px 200px 200px 200px;     
+}
+
+.img-bvenas{
+    background-image: url("../images/bvenas.jpg");
+    grid-column: 16/17;
+  grid-row: 4/6;
+  font-size: 1.5vw;
+  margin: 0;
+  left: 60px;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+ box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+border-radius: 200px 200px 200px 200px;     
+}
+
+.grid-container-lcmobil{
+  /*Posicion sobre GRID MAIN*/
+    background-color: rgba(0,0,0,0.5);
+  grid-column: 6/36;
+  grid-row: 5/16;
+  /*Template GRID*/
+  display: grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(10,2fr);
+  grid-gap: 2px;
+  align-content: center;
+  align-items: center;
+}
+
+.button-valv {
+  grid-column: 2/3;
+  grid-row: 9/10;
+ background-color: #FFBD00; /* Yellow */
+  border: none;
+    color: black;
+    font-family: Arial black;
+    height: auto;
+    height: 30px;
+    width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    border-radius: 50px;
+  font-size: 16px;    
+   box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button-valv:hover {
+  background-color: gray; 
+  color: black;
+}
+
+.button-pdcil {
+  grid-column: 10/12;
+  grid-row: 9/10;
+ background-color: #FFBD00; /* Yellow */
+  border: none;
+    color: black;
+    font-family: Arial black;
+    height: auto;
+    height: 30px;
+    width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    border-radius: 50px;
+  font-size: 16px;    
+   box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button-pdcil:hover {
+  background-color: gray; /* Green */
+  color: black;
+}
+
+.button-bvenas{
+  grid-column: 16/19;
+  grid-row: 9/10;
+ background-color: #FFBD00; /* Yellow */
+  border: none;
+    color: black;
+    font-family: Arial black;
+    height: auto;
+    height: 30px;
+    width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    border-radius: 50px;
+  font-size: 16px;    
+   box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button-bvenas:hover {
+  background-color: gray; 
+  color: black;
+}
+
+.text-valvdir{
+    grid-column: 2/3;
+    grid-row: 7/9;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Arial Black;
+    text-shadow: 3px 2px black;
+    color: white;    
+}
+
+.text-bombeng{
+    grid-column: 6/7;
+    grid-row: 7/9;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Arial Black;
+    color: white; 
+    text-shadow: 3px 2px black;
+}
+
+.text-pdcil{
+    grid-column: 10/12;
+    grid-row: 7/9;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Arial Black;
+    color: white; 
+    text-shadow: 3px 2px black;
+}
+
+.text-bvenas{
+    grid-column: 16/18;
+    grid-row: 7/9;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Arial Black;
+    color: white; 
+    text-shadow: 3px 2px black;
+}
+
+.button-bombeng {
+  grid-column: 6/7;
+  grid-row: 9/10;
+ background-color: #FFBD00; /* Yellow */
+  border: none;
+    color: black;
+    font-family: Arial Black;
+    height: auto;
+    height: 30px;
+    width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    border-radius: 50px;
+  font-size: 16px;    
+  box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button-bombeng:hover {
+  background-color: gray; 
+  color: black;
+}
+
+.grid-container-lcindustrial{
+  /*Posicion sobre GRID MAIN*/
+  grid-column: 6/36;
+  grid-row: 18/29;
+    background-color: rgba(0,0,0,0.5);
+  /*Template GRID*/
+  display: grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(10,2fr);
+  grid-gap: 2px;
+  align-content: center;
+  align-items: center;
+}
+
+
+.img-vdir{
+    background-image: url("../images/vdir.jpg");
+    grid-column: 2/2;
+  grid-row: 4/6;
+  font-size: 1.5vw;
+  margin: 0;
+  left: 60px;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+ box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+border-radius: 200px 200px 200px 200px;     
+}
+
+.text-vdir{
+    grid-column: 2/3;
+    grid-row: 7/9;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Arial Black;
+    text-shadow: 3px 2px black;
+    color: white; 
+}
+
+.button-vdir {
+  grid-column: 2/3;
+  grid-row: 9/10;
+ background-color: #FFBD00; /* Yellow */
+  border: none;
+    color: black;
+    font-family: Arial black;
+    height: auto;
+    height: 30px;
+    width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    border-radius: 50px;
+  font-size: 16px;    
+   box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button-vdir:hover {
+  background-color: gray; 
+  color: black;
+}
+
+
+.img-ksmateriales{
+    background-image: url("../images/bombeng.jpg");
+    grid-column: 6/7;
+  grid-row: 4/6;
+  font-size: 1.5vw;
+  margin: 0;
+  left: 60px;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+ box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+border-radius: 200px 200px 200px 200px;     
+}
