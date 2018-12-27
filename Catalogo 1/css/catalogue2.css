@@ -97,7 +97,7 @@ grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 ====================================================================================
 */
 .img-valvdir{
-  background-image: url("../images/valvdir.jpg");
+    background-image: url("../images/ksm.jpg");
   grid-column:4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -113,7 +113,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bombeng{
-    background-image: url("../images/bombeng.jpg");
+    background-image: url("../images/adh.jpg");
     grid-column: 8/9;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -128,7 +128,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-pdcil{
-    background-image: url("../images/pdcil.jpg");
+    background-image: url("../images/tah.jpg");
     grid-column: 12/13;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -353,7 +353,7 @@ border-radius: 200px 200px 200px 200px;
 
 /*//////////////Valvulas Direccionales///////////*/ 
 .img-vdir{
-    background-image: url("../images/vdir.jpg");
+    background-image: url("../images/kcn.jpg");
     grid-column: 4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
