@@ -16,17 +16,14 @@ body{
     }
 
 
-
-
-
 /*CONTAINER MAIN*/
-/*.grid-container-main{
+.grid-container-main{
   display: grid;
   height: 1366px;
     width:100%;
   grid-gap: 4px;
   grid-template: repeat(40,1fr)/repeat(40,1fr);
-}*/
+}
 /*APLIACACION A TODOS LOS DIV DENTRO DE .grid-container-main*/
 /*
 ====================================================================================
