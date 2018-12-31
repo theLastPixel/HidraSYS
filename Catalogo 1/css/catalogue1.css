@@ -79,7 +79,7 @@ grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 ====================================================================================
 */
 .img-valvdir{
-  background-image: url("../images/valvdir.jpg");
+  background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
   grid-column:4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -95,7 +95,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bombeng{
-    background-image: url("../images/bombeng.jpg");
+    background-image: url("../images/Pagina-1/LineCardMobil/bombeng.jpg");
     grid-column: 8/9;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -110,7 +110,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-pdcil{
-    background-image: url("../images/pdcil.jpg");
+    background-image: url("../images/Pagina-1/LineCardMobil/pdcil.jpg");
     grid-column: 12/13;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -125,7 +125,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bvenas{
-    background-image: url("../images/bvenas.jpg");
+    background-image: url("../images/Pagina-1/LineCardMobil/bvenas.jpg");
     grid-column: 16/17;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -335,7 +335,7 @@ border-radius: 200px 200px 200px 200px;
 
 /*//////////////Valvulas Direccionales///////////*/ 
 .img-vdir{
-    background-image: url("../images/vdir.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/vdir.jpg");
     grid-column: 4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -387,7 +387,7 @@ border-radius: 200px 200px 200px 200px;
 /*////////////// Kit de materiales /////////////*/
 
 .img-ksmateriales{
-    background-image: url("../images/ksmateriales.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/ksmateriales.jpg");
     grid-column: 8/9;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -438,7 +438,7 @@ border-radius: 200px 200px 200px 200px;
 /*//////////Motores hidraulicos para aplicaciones///////////*/
 
 .img-mha{
-    background-image: url("../images/mha.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/mha.jpg");
     grid-column: 12/13;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -490,7 +490,7 @@ border-radius: 200px 200px 200px 200px;
 
 .img-fmv{
     
-    background-image: url("../images/fmv.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/fmv.jpg");
     grid-column: 16/17;
     grid-row: 4/6;
     font-size: 1.5vw;
