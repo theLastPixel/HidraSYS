@@ -9,6 +9,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale= 1.0">
         <link rel="stylesheet" href="css/catalogue2.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="JS/index.js"></script>
         <script type="text/javascript">
@@ -17,18 +19,24 @@
     <body>
         <!--GRID PRINCIPAL-->
         <main class="grid-container-main">
+            <header class="grid-total-menu">
+            <a class="menu-box-all" id="menu-box-1" href="index.html"><img src="images/header/home.png" alt="">INICIO</a>
+            <a class="menu-box-all" id="menu-box-2" href="index.html"><img src="images/header/about-us.png" alt="">CONOCENOS</a>
+            <a class="menu-box-all" id="menu-box-3" href="index.html"><img src="images/header/catalogue.png" alt="">CATALOGO</a>
+            <a class="menu-box-all" id="menu-box-4" href="index.html"><img src="images/header/contact.png" alt="">CONTACTANOS</a>
+        </header>
             <div class="container-box-avatar">
                 <div class="lbllogo">Catalogo</div>
             </div>
             <!--GRID LOGIN-->
             <div class="grid-container-lcmobil">
                 <!--/////////////////Grid LINE CARD MOBIL/////////////////////////////-->
-                <div class="lbl-lcmobil">Bolteos</div>
+                <div class="lbl-lcmobil">Coples rapidos</div>
                
                  
                 <!--VALVULA DIRECCIONAL-->
                  <div class="img-valvdir"></div>
-                <div class="text-valvdir">Kit de sellos materiales</div>
+                <div class="text-valvdir">Válvulas direccionales</div>
                 <button class="button-valv">Ver mas...</button>
                  <!--FLECHA IZQUIERDA-->
                  <div class="leftrowlcm"></div>
@@ -39,11 +47,11 @@
                 <!--BOMBA DE ENGRANE-->
                     <div class="img-bombeng"></div>
                 <button class="button-bombeng">Ver mas...</button>
-                <div class="text-bombeng">Adaptadores Hidraulicos</div>
+                <div class="text-bombeng">Bomba de engranes</div>
                 <!--BOMBA DE PARTES DE CILINDROS-->
                     <div class="img-pdcil"></div>
                 <button class="button-pdcil">Ver mas...</button>
-                <div class="text-pdcil">Tanques de aceite hidraulico</div>
+                <div class="text-pdcil">Partes de cilindros</div>
                 <!--BOMBA DE VENAS-->
                     <div class="img-bvenas"></div>
                 <button class="button-bvenas">Ver mas...</button>
@@ -51,13 +59,13 @@
                     
             </div>
             <!--//////////////////////////Grid LCINDUSTRIAL//////////////////////////////-->
-              
               <div class="grid-container-lcindustrial">         
-              <div class="lbl-lcindustrial">Publicacion de volteos</div>
+              <div class="lbl-lcindustrial">Bolteos</div>
+                  
                   
                     <!--VALVULA DIRECCIONAL-->
                  <div class="img-vdir"></div>
-                <div class="text-vdir">Kit de controles neumaticos</div>
+                <div class="text-vdir">Válvulas direccionales</div>
                 <button class="button-vdir">Ver mas...</button>
                   <!--FLECHA IZQUIERDA-->
                 <div class="leftrowlcin"></div>
@@ -67,25 +75,46 @@
                   <!--KIT DE MATERIALES-->
                  <div class="img-ksmateriales"></div>
                 <div class="text-ksmateriales">Kit de materiales</div>
-                <button class="button-ksmateriales">Ver mas...</button>                  
+                <button class="button-ksmateriales">Ver mas...</button>
+                  
                   <!--MOTORES PARA APLICACIONES-->
                  <div class="img-mha"></div>
                 <div class="text-mha">Motores de aplicaciones</div>
                 <button class="button-mha">Ver mas...</button>
+                  
                   <!--FILTROS MANOMETROS VALVULAS-->
                  <div class="img-fmv"></div>
                 <div class="text-fmv">Filtros Manometros Valvulas</div>
                 <button class="button-fmv">Ver mas...</button>
+                  
+                  
             </div>
+            
+            
         </main>
                      <section class="paginacion">
                 <ul>
-                        <li><a href="catalogue-n1.html">1</a></li>
-                        <li><a href="#">2</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="catalogue-n2.html">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
                 </ul>
             </section>
+          <form class="grid-total-footer">
+            <p class="footer-box-all" id="footer-box-text-information">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi debitis natus fuga magni doloribus veritatis, odio ducimus minima ipsa recusandae soluta consectetur nihil provident accusantium maiores perspiciatis est assumenda culpa. Quibusdam aliquid culpa expedita dolore a inventore velit praesentium et.</p>
+            <label class="footer-box-all" id="footer-box-lbl-name" for="Nombre">NOMBRE</label>
+            <input class="footer-box-all" id="footer-box-txt-name" type="text" name="nombre" id="nombre">
+            <label class="footer-box-all" id="footer-box-lbl-email" for="email">E-MAIL</label>
+            <input class="footer-box-all" id="footer-box-txt-email" type="text" name="email" id="email">
+            <label class="footer-box-all" id="footer-box-lbl-message" for="mensaje">MENSAJE</label>
+            <button class="footer-box-all" id="footer-box-btn-send" type="submit">ENVIAR</button>
+            <textarea class="footer-box-all" id="footer-box-txtArea-message" name="mensaje" id="mensaje" cols="10" rows="1"></textarea>
+            <img class="footer-box-all" id="footer-box-icon-facebook" src="images/footer/facebook-color-2.png" alt="Facebook">
+            <img class="footer-box-all" id="footer-box-icon-youtube" src="images/footer/youtube-color-2.png" alt="Youtube">
+            <img class="footer-box-all" id="footer-box-icon-whatsapp" src="images/footer/whatsapp-color-2.png" alt="Whatsapp">
+            <img class="footer-box-all" id="footer-box-icon-pinterist" src="images/footer/pinterest-color-1.png" alt="Pinterist">
+            <p class="footer-box-all" id="footer-box-text-copyRight">COPYRIGHT® 2019 THE LOVE FOREST, EL REGISTRA EN ESTA WEB IMPLICA LA ACEPTACION DE SU POLITICA DE PRIVACIDAD PARA CONSULTAR, MODIFICAR, O DAR DE BAJA SUS DATOS ESCRIBE A HOLA@THELOVEFOREST.COM DISEÑO BLOG PHOTONICA</p>
+        </form>
     </body>
 </html>
