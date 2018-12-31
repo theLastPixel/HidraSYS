@@ -7,9 +7,9 @@ body{
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url("../images/fondo/wallpaper.png");
+    background-image: url("../imagenes/fondo/wallpaper.png");
     background-size: cover;
-    background-attachment:fixed; 
+    background-attachment:fixed;
     background-position: center 0px;
 }
 
@@ -22,7 +22,6 @@ main{
     display: grid;
     grid-template: repeat(40, 1fr) / repeat(40, 1fr);
     grid-gap: 2px;
-    height: 1500px;
 }
 
 /*
@@ -46,6 +45,7 @@ main{
     padding: 0;
     grid-row: 2 / 3;
     display: flex;    
+    /* align-content: center; */
     align-items: center;
     justify-content: center;
     font-size: 1.4vw;
@@ -60,9 +60,6 @@ main{
     margin: 0;
     padding: 0;
     grid-row: 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: auto;
     width: 75%;
     justify-self: right;
@@ -101,21 +98,24 @@ main{
     grid-column: 12 / 13;
 }
 
+
+
 /*
 ====================================================================================
-                                DIV INFORMATION                                
+                                LOGO                                
 ====================================================================================
 */
-.grid-total-information{
-    background-color: rgba(0, 0, 0, 0.425);
-    grid-row: 8/22;
-    grid-column: 30/38;
+
+.grid-total-logo{
+    grid-row: 11/22;
+    grid-column: 12/30;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
-    color: white;
     padding: 10px;
     text-align: center;
+    height: 80%;
+    width: auto;
 }
+
 
 /*
 ====================================================================================
