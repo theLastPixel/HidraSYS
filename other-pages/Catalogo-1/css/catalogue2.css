@@ -3,17 +3,9 @@
                                CONTENIDO PRINCIPAL                                 
 ====================================================================================
 */
-/* BODY */
-body{
-    
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/wallpaper.png");
-    background-size: cover;
-    background-attachment:fixed; 
-    background-position: center 0px;
-    }
+
+
+
 /* APLICACION A TODO EL CONTENIDO DEL MAIN */
 main{
   -webkit-transition-duration: 0.4s;
@@ -38,7 +30,7 @@ main{
 .grid-container-main{
   display: grid;
   height: 1366px;
-    width:100%;
+  width:100%;
   grid-gap: 4px;
   grid-template: repeat(40,1fr)/repeat(40,1fr);
 }
@@ -51,7 +43,7 @@ main{
 .container-box-avatar{
     
   grid-column: 16/26;
-  grid-row: 2/10;
+  grid-row: 7/10;
     display: grid;
 grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 }
@@ -97,7 +89,7 @@ grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 ====================================================================================
 */
 .img-valvdir{
-    background-image: url("../images/ksm.jpg");
+  background-image: url("../images/valvdir.jpg");
   grid-column:4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -113,7 +105,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bombeng{
-    background-image: url("../images/adh.jpg");
+    background-image: url("../images/bombeng.jpg");
     grid-column: 8/9;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -128,7 +120,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-pdcil{
-    background-image: url("../images/tah.jpg");
+    background-image: url("../images/pdcil.jpg");
     grid-column: 12/13;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -189,7 +181,7 @@ border-radius: 200px 200px 200px 200px;
   /*Posicion sobre GRID MAIN*/
     background-color: rgba(0,0,0,0.5);
   grid-column: 6/36;
-  grid-row: 6/20;
+  grid-row: 12/26;
   /*Template GRID*/
   display: grid;
   grid-template-columns: repeat(20,1fr);
@@ -340,7 +332,7 @@ border-radius: 200px 200px 200px 200px;
 .grid-container-lcindustrial{
   /*Posicion sobre GRID MAIN*/
   grid-column: 6/36;
-  grid-row: 21/35;
+  grid-row: 28/42;
     background-color: rgba(0,0,0,0.5);
   /*Template GRID*/
   display: grid;
@@ -353,7 +345,7 @@ border-radius: 200px 200px 200px 200px;
 
 /*//////////////Valvulas Direccionales///////////*/ 
 .img-vdir{
-    background-image: url("../images/kcn.jpg");
+    background-image: url("../images/vdir.jpg");
     grid-column: 4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -590,7 +582,7 @@ border-radius: 200px 200px 200px 200px;
 /*///////////////////////////////PAGINACION//////////////////////////////////////*/
 
 .paginacion{
-    margin: 20px 50px;    
+    margin: 150px 50px;    
 }
 
 .paginacion ul{

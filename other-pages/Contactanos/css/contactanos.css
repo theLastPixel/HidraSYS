@@ -1,0 +1,31 @@
+/*
+====================================================================================
+                            CONTENEDORES PRINCIPALES                               
+====================================================================================
+*/
+.grid-total{
+    height: 1400px;
+}
+
+/*
+====================================================================================
+                                CONTACT                                
+====================================================================================
+*/
+.grid-total-contact{
+    background-color: rgba(0, 0, 0, 0.425);
+    grid-row: 7/25;
+    grid-column: 5/37;
+    display: grid;
+    grid-template: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 10fr 3fr 1fr 3fr/ 1fr 10fr 1fr;
+    grid-gap: 3px;
+    overflow: hidden;
+}
+
+.contact-box-all{
+    grid-column: 2/3;
+    font-size: 1vw;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+}

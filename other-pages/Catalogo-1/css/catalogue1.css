@@ -3,34 +3,6 @@
                                CONTENIDO PRINCIPAL                                 
 ====================================================================================
 */
-/* BODY */
-body{
-    
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/wallpaper.png");
-    background-size: cover;
-    background-attachment:fixed; 
-    background-position: center 0px;
-    }
-/* APLICACION A TODO EL CONTENIDO DEL MAIN */
-main{
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.8s;
-}
-
-
-/*#line {
-   
-    grid-column: 16/26;
-   grid-row: 2/10;
-     border: 5px;
-    border-style: solid;
-    color: #FFAF00;
-    
-    
-}*/
 
 
 
@@ -51,7 +23,7 @@ main{
 .container-box-avatar{
     
   grid-column: 16/26;
-  grid-row: 2/10;
+  grid-row: 7/10;
     display: grid;
 grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 }
@@ -189,7 +161,7 @@ border-radius: 200px 200px 200px 200px;
   /*Posicion sobre GRID MAIN*/
     background-color: rgba(0,0,0,0.5);
   grid-column: 6/36;
-  grid-row: 6/20;
+  grid-row: 12/26;
   /*Template GRID*/
   display: grid;
   grid-template-columns: repeat(20,1fr);
@@ -340,7 +312,7 @@ border-radius: 200px 200px 200px 200px;
 .grid-container-lcindustrial{
   /*Posicion sobre GRID MAIN*/
   grid-column: 6/36;
-  grid-row: 21/35;
+  grid-row: 28/42;
     background-color: rgba(0,0,0,0.5);
   /*Template GRID*/
   display: grid;
@@ -590,7 +562,7 @@ border-radius: 200px 200px 200px 200px;
 /*///////////////////////////////PAGINACION//////////////////////////////////////*/
 
 .paginacion{
-    margin: 20px 50px;    
+    margin: 150px 50px;    
 }
 
 .paginacion ul{
