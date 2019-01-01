@@ -4,26 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/contactanos.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <main class="grid-total">
         <header class="grid-total-menu">
                 <img class="menu-box-img-all" id="menu-box-img-home" src="images/header/home.png" alt="">
-            <a class="menu-box-lbl-all" id="menu-box-lbl-home" href="index.html">INICIO</a>            
-
+            <a class="menu-box-lbl-all" id="menu-box-lbl-home" href="index.html">INICIO</a>
             <img class="menu-box-img-all" id="menu-box-img-about" src="images/header/about-us.png" alt="">
             <a class="menu-box-lbl-all" id="menu-box-lbl-about" href="index.html">CONOCENOS</a>
-
             <img class="menu-box-img-all" id="menu-box-img-catalogue" src="images/header/catalogue.png" alt="">
             <a class="menu-box-lbl-all" id="menu-box-lbl-catalogue" href="index.html">CATALOGO</a>
-
             <img class="menu-box-img-all" id="menu-box-img-contact" src="images/header/contact.png" alt="">
             <a class="menu-box-lbl-all" id="menu-box-lbl-contact" href="index.html">CONTACTANOS</a>
         </header>
@@ -32,28 +25,49 @@
         <form class="grid-total-contact">
             <label class="contact-box-all" id="contact-box-lbl-nombre" for="nombre">Nombre(s) y apellido(s)</label>
             <input class="contact-box-all" id="contact-box-txt-nombre" type="text" name="nombre" id="nombre">
-
             <label class="contact-box-all" id="contact-box-lbl-email" for="email">E-mail</label>
             <input class="contact-box-all" id="contact-box-txt-email" type="text" name="email" id="email">
-
             <label class="contact-box-all" id="contact-box-lbl-tel" for="tel">Telefono</label>
             <input class="contact-box-all" id="contact-box-txt-tel" type="number" name="tel" id="tel">
-
             <label class="contact-box-all" id="contact-box-lbl-cel" for="cel">Celular</label>
             <input class="contact-box-all" id="contact-box-txt-cel" type="number" name="cel" id="cel">
-
             <label class="contact-box-all" id="contact-box-lbl-adress" for="adress">Direccion</label>
             <input class="contact-box-all" id="contact-box-txt-adress" type="text" name="adress" id="adress">
-
             <label class="contact-box-all" id="contact-box-lbl-subject" for="subject">Asunto</label>
             <input class="contact-box-all" id="contact-box-txt-subject" type="text" name="subject" id="subject">
-
-            <textarea class="contact-box-all" id="contact-box-textArea-message" name="message" id="message" cols="10" rows="10"></textarea>
-
+            <textarea class="contact-box-all" id="contact-box-textArea-message" name="message" id="message" rows="5" placeholder="Escriba su mensaje"></textarea>
             <button class="contact-box-all" id="contact-box-button-Attach">Adjuntar archivo</button>
-
             <button class="contact-box-all" id="contact-box-button-send">ENVIAR</button>
         </form>
+
+        <section class="grid-total-information">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.526289772022!2d-116.92484368407739!3d32.48535998106111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d938e5baa9d097%3A0x2c64e0b3e5e01c16!2sLfp+Hydraulic+System!5e0!3m2!1ses-419!2smx!4v1546299073818" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h2  id="tittle-LPF">L.F.P. Hydraulic Systems</h2>
+            <h3 class="titles" id="tiitle-horarios">Horarios de Trabajo</h3>
+            <p class="texts" id="text-horario">
+                Lunes a Viernes de 8:00am a 6:00pm
+                Sábados de 8:00am 12:00pm
+            </p>
+
+            <h3 class="titles" id="tiitle-correos">Correos electrónicos</h3>
+            <p class="texts" id="text-correos">
+                Compras: purchases@lfphydraulics.com
+                Ventas: ventas@lfphydraulics com
+            </p>
+
+            <h3 class="titles" id="tiitle-direccion">Dirección</h3>
+            <p class="texts" id="text-direccion">
+                Misión de San Luis No. 6906
+                Fracc. Padre Kino C.P. 22223
+            </p>
+
+            <h3 class="titles" id="tiitle-telefono">Teléfono</h3>
+            <p class="texts" id="text-telefono">
+                País: (52) Área: (664)
+                Teléfono: (664) 978-2593
+            </p>
+        </section>
+        
         
         <form class="grid-total-footer">
             <p class="footer-box-all" id="footer-box-text-information">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi debitis natus fuga magni doloribus veritatis, odio ducimus minima ipsa recusandae soluta consectetur nihil provident accusantium maiores perspiciatis est assumenda culpa. Quibusdam aliquid culpa expedita dolore a inventore velit praesentium et.</p>
