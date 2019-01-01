@@ -13,9 +13,191 @@ body{
     background-size: cover;
     background-attachment:fixed; 
     background-position: center 0px;
+    text-align: center;
+    position: relative;
+    padding-top: 10em;
+    margin: 0;
+    padding: 0;
     }
 
+/*////////////////////////////////MODAL///////////////////*/
 
+.modal{
+    
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    background: rgba(0,0,0,0.9);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    
+}
+
+.modal .content-modal{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    margin-top: 40px;
+    top: -100vh;
+    transition: top 0.35 ease;
+    margin-left: -250px;
+    background: #FFBD00;
+    z-index: 99999999;
+    
+    
+}
+
+.modal h2{
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-family: Impact;
+    
+}
+
+.modal h1{
+    padding: 7.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    color:  rgba(0,0,0,1);
+    margin: 0;
+    font-family: Impact;
+    font-size: 1.2vw;
+    
+}
+
+.modal article{
+    height: 450px;
+    background: white;
+    
+}
+
+.close-modal{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 450px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.modal a:hover{
+  
+    
+}
+.modal:target{
+    opacity: 1;
+    top:0;   
+}
+
+.modal .btn-close-modal{
+    position: absolute;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.modal:target .content-modal{
+    top: 50px;
+    transition top 0.35s ease; 
+}
+
+
+.img-posicion{
+    
+    background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
+    position: relative;
+    top: 60px;
+    left: 175px;
+    width: 150px;
+    height: 85px;
+    border-radius: 15px;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+}
+
+@media (width: 1920px){
+   .modal article{
+    height: 600px;
+    background: white;
+    
+}
+    
+    
+    
+    
+}
+
+
+
+.btn-pagar1 {
+    position: relative;
+    left: 200px;
+    bottom: 85px;;
+    cursor: pointer;
+    grid-column: 4/5;
+    grid-row: 9/10;
+    background-color: #048900; /* Green */
+    border: none;
+    color: white;
+    font-family: Arial black;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding-top: 18px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 16px;    
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.btn-pagar1:hover {
+  background-color: #07FF00; 
+  color: white;
+}
+
+.btn-scomprando1 {
+    position: relative;
+    left: -190px;
+    bottom: 62px;
+    padding-top: 18px;
+    cursor: pointer;
+    background-color: #FFBD00; /* Green */
+    border: none;
+    color: white;
+    font-family: Arial black;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 16px;    
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.btn-scomprando1:hover {
+  background-color: #FFED00; 
+  color: white;
+}
+
+
+/*////////////////////////////////////////////////////////*/
 /*CONTAINER MAIN*/
 .grid-container-main{
   display: grid;
@@ -182,6 +364,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .button-valv {
+    cursor: pointer;
   grid-column: 4/5;
   grid-row: 9/10;
  background-color: #FFBD00; /* Yellow */
@@ -204,6 +387,13 @@ border-radius: 200px 200px 200px 200px;
   background-color: gray; 
   color: black;
 }
+/*////////////////////////////////////////////////////////////////*/
+.modal{
+    
+    
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
 
 .button-pdcil {
   grid-column: 12/13;
@@ -599,3 +789,7 @@ border-radius: 200px 200px 200px 200px;
 .paginacion ul li a:hover{
     background-color: gray;
 }
+
+
+
+/*/////////////////////RESPONSIVE//////////////////////*/
