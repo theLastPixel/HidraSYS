@@ -112,7 +112,7 @@ main > *{
 */
 
 .grid-total-footer{
-    grid-row: 27 / -1;
+    grid-row: 28 / -1;
     grid-column: 1 / -1;    
     background-color: rgb(33, 33, 33);
     display: grid;
