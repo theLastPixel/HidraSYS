@@ -15,7 +15,7 @@ body{
     padding: 0;
 }
 
-main{
+main > *{
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
 }
@@ -124,7 +124,6 @@ main{
 }
 
 .footer-box-all{
-    background-color: rgb(104, 177, 137);
     padding: 0px;
     margin: 0px;
     font-size: 1.3vw;
@@ -202,69 +201,46 @@ main{
 }
 
 /*///////////////ICONS//////////////*/
-
-/*FACEBOOK*/
-#footer-box-icon-facebook{
-    grid-row: 10/11; grid-column: 14/15;
-    height: auto;
-    width: 100%;
+.footer-box-all-icons{
+    grid-row: 10/11;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-#footer-box-icon-facebook:hover{
+
+.footer-box-all-icons img{
     height: auto;
     width: 100%;
+}
+
+.footer-box-all-icons:hover{
     -webkit-filter: none;
     filter: none;
+}
+
+/*FACEBOOK*/
+#footer-box-icon-facebook{
+    grid-column: 14/15;    
 }
 
 /*YOUTUBE*/
 #footer-box-icon-youtube{
-    grid-row: 10/11; grid-column: 15/16;
-    height: auto;
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-#footer-box-icon-youtube:hover{
-    height: auto;
-    width: 100%;
-    -webkit-filter: none;
-    filter: none;
+    grid-column: 15/16;
 }
 /*WHATSAPP*/
 #footer-box-icon-whatsapp{
-    grid-row: 10/11; grid-column: 16/17;
-    height: auto;
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-#footer-box-icon-whatsapp:hover{
-    height: auto;
-    width: 100%;
-    -webkit-filter: none;
-    filter: none;
+    grid-column: 16/17;
 }
 
-/*PINTERIST*/
-#footer-box-icon-pinterist{
-    grid-row: 10/11; grid-column: 17/18;
-    height: auto;
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+/*BLOG*/
+#footer-box-icon-blog{
+    grid-column: 17/18;
 }
-#footer-box-icon-pinterist:hover{
-    height: auto;
-    width: 100%;
-    -webkit-filter: none;
-    filter: none;
-}
+
 
 /*COPYRIGHT*/
 #footer-box-text-copyRight{
-    grid-row: 12/13; grid-column: 1/-1;
+    grid-row: 12/13; 
+    grid-column: 1/-1;
     font-size: 1vw;
     text-align: center;
 }
