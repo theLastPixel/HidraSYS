@@ -4,13 +4,14 @@
 ====================================================================================
 */
 body{
-    z-index: -1;
+    /* z-index: -1;
     width: 100%;
     height: 100%;
     background-image: url("../imagenes/fondo/wallpaper.png");
     background-size: cover;
     background-attachment:fixed;
-    background-position: center 0px;
+    background-position: center 0px; */
+    background-color: white;
     margin: 0;
     padding: 0;
 }
