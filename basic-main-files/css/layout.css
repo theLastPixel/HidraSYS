@@ -11,6 +11,8 @@ body{
     background-size: cover;
     background-attachment:fixed;
     background-position: center 0px;
+    margin: 0;
+    padding: 0;
 }
 
 main{
@@ -35,12 +37,12 @@ main{
     grid-column: 1 / -1;
     background-color: transparent;
     display: grid;
-    grid-template: 1fr 100fr 1fr / 5fr 25fr 50fr 1fr 25fr 50fr 1fr 25fr 50fr 1fr 25fr 50fr 1fr 5fr 1fr;
+    grid-template: 1fr 100fr 1fr / 20fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
     grid-gap: 0px;
 }
 
 .menu-box-lbl-all{
-    background-color: #FFBD00;
+    background-color: transparent;
     margin: 0;
     padding: 0;
     grid-row: 2 / 3;
@@ -48,56 +50,42 @@ main{
     /* align-content: center; */
     align-items: center;
     justify-content: center;
-    font-size: 1.4vw;
-    text-decoration: none;
+    font-size: 2.2vw;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    border: 5px solid black;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    text-decoration: none;
 }
-
-.menu-box-img-all{
-    background-color: #FFBD00;
-    margin: 0;
-    padding: 0;
-    grid-row: 2 / 3;
-    height: auto;
-    width: 75%;
-    justify-self: right;
-    border: 5px solid black;
+.menu-box-lbl-all:hover{
+    color: #FFBD00;
+    text-decoration: underline;
 }
 
 /*HOME*/
-#menu-box-img-home{
-    grid-column: 2 / 3;
-}
 #menu-box-lbl-home{
     grid-column: 3 / 4;
+    
 }
-
 /*ABOUT*/
-#menu-box-img-about{
-    grid-column: 5 / 6;
-}
 #menu-box-lbl-about{
-    grid-column: 6 / 7;
+    grid-column: 5 / 6;
 }
 
 /*CATALOGUE*/
-#menu-box-img-catalogue{
-    grid-column: 8 / 9;
-}
 #menu-box-lbl-catalogue{
-    grid-column: 9 / 10;
+    grid-column: 7 / 8;
 }
 
 /*CONTACT*/
-#menu-box-img-contact{
-    grid-column: 11 / 12;
-}
 #menu-box-lbl-contact{
-    grid-column: 12 / 13;
+    grid-column: 9 / 10;
 }
 
+/*BLOG*/
+#menu-box-lbl-blog{
+    grid-column: 11 / 12;
+}
 
 
 /*
@@ -147,8 +135,9 @@ main{
 
 /*INFORMATION*/
 #footer-box-text-information{
-    font-size: 1vw; grid-row: 2/3; 
-    grid-column: 8/24;
+    font-size: 1vw; 
+    grid-row: 2/3; 
+    grid-column: 10/-1;
     text-align: center;
 }
 
