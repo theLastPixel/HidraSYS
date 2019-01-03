@@ -1,10 +1,3 @@
-
-
-/*
-====================================================================================
-                                CONTACT                                
-====================================================================================
-*/
 .grid-total{
     display: grid;
     grid-template: repeat(40, 1fr) / repeat(40, 1fr);
@@ -12,32 +5,95 @@
     height: 1700px;
 }
 
+
 /*
 ====================================================================================
-                                FOOTER (MODIFICADO DEL LAYOUT)                                
+                                    FORM CONTACTAR                              
 ====================================================================================
 */
 
-.grid-total-footer{
-    grid-row: 32 / -1;
-    grid-column: 1 / -1;
-}
-
 .grid-total-contact{
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.24);
     grid-row: 6/23;
     grid-column: 5/37;
     display: grid;
-    grid-template: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 10fr 3fr 1fr 3fr/ 1fr 10fr 1fr;
-    grid-gap: 3px;
+    grid-template: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 5fr 1fr 3fr 1fr/ 5fr 10fr 10fr 10fr 10fr 5fr;
+    grid-gap: 5px;
+}
+
+.contact-box-all:focus{
+    border-bottom: solid #F39B53 .4rem;
+    text-decoration: none;
 }
 
 .contact-box-all{
-    grid-column: 2/3;
-    font-size: 1vw;
-    color: black;
+    font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: transparent;
+    border-bottom-color: rgb(43, 43, 43);
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    color: white;
 }
+
+#contact-box-txt-nombre{
+    grid-row: 2 / 3;
+    grid-column: 2 / 6;
+}
+
+#contact-box-txt-email{
+    grid-row: 4 / 5;
+    grid-column: 2 / 6;
+}
+
+#contact-box-txt-tel{
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+}
+
+#contact-box-txt-cel{
+    grid-row: 8 / 9;
+    grid-column: 2 / 4;
+}
+
+#contact-box-txt-adress{
+    grid-row: 10 / 11;
+    grid-column: 2 / 6;
+}
+
+#contact-box-txt-subject{
+    grid-row: 12 / 13;
+    grid-column: 2 / 4;
+}
+
+#contact-box-textArea-message{
+    grid-row: 14 / 15;
+    grid-column: 2 / 6;
+}
+
+#contact-box-button-send{
+    grid-row: 16 / 17;
+    grid-column: 2 / 4;
+    background-color: #F39B53;
+    border: solid black 2px;
+}
+
+
+#contact-box-button-Attach{
+    grid-row: 16 / 17;
+    grid-column: 4 / 6;
+    background-color: rgb(85, 103, 204);
+    border: solid black 2px;
+} 
+
+/*
+====================================================================================
+                            GRID INFORMATION COMPANY                              
+====================================================================================
+*/
 
 .grid-total-information{
     grid-row: 24/31;
@@ -144,3 +200,13 @@ Teléfono
 País: (52) Área: (664)
 Teléfono: (664) 978-2593 
 */
+
+/*
+====================================================================================
+                                FOOTER (MODIFICADO DEL LAYOUT)                                
+====================================================================================
+*/
+.grid-total-footer{
+    grid-row: 32 / -1;
+    grid-column: 1 / -1;
+}

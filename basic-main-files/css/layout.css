@@ -37,8 +37,8 @@ main > *{
     grid-column: 1 / -1;
     background-color: transparent;
     display: grid;
-    grid-template: 1fr 100fr 1fr / 20fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
-    grid-gap: 0px;
+    grid-template: 10fr 50fr 10fr / 5fr 20fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    grid-gap: 2px;
 }
 
 .menu-box-lbl-all{
@@ -46,7 +46,7 @@ main > *{
     margin: 0;
     padding: 0;
     grid-row: 2 / 3;
-    display: flex;    
+    display: flex;
     /* align-content: center; */
     align-items: center;
     justify-content: center;
@@ -57,9 +57,21 @@ main > *{
     transition-duration: 0.5s;
     text-decoration: none;
 }
+
+
 .menu-box-lbl-all:hover{
     color: #FFBD00;
     text-decoration: underline;
+}
+/*LOGO LFP*/
+#menu-box-img-LFP{
+    grid-column: 2 / 3;
+    justify-content: left;
+}
+
+#menu-box-img-LFP img{
+    height: auto;
+    width: 60%;
 }
 
 /*HOME*/

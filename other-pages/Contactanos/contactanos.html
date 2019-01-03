@@ -11,6 +11,7 @@
 <body>
     <main class="grid-total">
         <header class="grid-total-menu">
+            <a class="menu-box-lbl-all" id="menu-box-img-LFP" href="../../index.html"><img src="../../basic-main-files/imagenes/LFP/LFP.jpeg" alt="LOGO"></a>
             <!-- <img class="menu-box-img-all" id="menu-box-img-home" src="../../basic-main-files/imagenes/header/home.png" alt=""> -->
             <a class="menu-box-lbl-all" id="menu-box-lbl-home" href="../../index.html">INICIO</a>
             <!-- <img class="menu-box-img-all" id="menu-box-img-about" src="../../basic-main-files/imagenes/header/about-us.png" alt=""> -->
@@ -23,21 +24,15 @@
 
         <!-- Nombre y apeliidos, Email, Telefono, Celular, Direccion, Asunto, Mensaje y/o sugerencia, Adjunte archivo, -->
         <form class="grid-total-contact">
-            <label class="contact-box-all" id="contact-box-lbl-nombre" for="nombre">Nombre(s) y apellido(s)</label>
-            <input class="contact-box-all" id="contact-box-txt-nombre" type="text" name="nombre" id="nombre">
-            <label class="contact-box-all" id="contact-box-lbl-email" for="email">E-mail</label>
-            <input class="contact-box-all" id="contact-box-txt-email" type="text" name="email" id="email">
-            <label class="contact-box-all" id="contact-box-lbl-tel" for="tel">Telefono</label>
-            <input class="contact-box-all" id="contact-box-txt-tel" type="number" name="tel" id="tel">
-            <label class="contact-box-all" id="contact-box-lbl-cel" for="cel">Celular</label>
-            <input class="contact-box-all" id="contact-box-txt-cel" type="number" name="cel" id="cel">
-            <label class="contact-box-all" id="contact-box-lbl-adress" for="adress">Direccion</label>
-            <input class="contact-box-all" id="contact-box-txt-adress" type="text" name="adress" id="adress">
-            <label class="contact-box-all" id="contact-box-lbl-subject" for="subject">Asunto</label>
-            <input class="contact-box-all" id="contact-box-txt-subject" type="text" name="subject" id="subject">
-            <textarea class="contact-box-all" id="contact-box-textArea-message" name="message" id="message" rows="5" placeholder="Escriba su mensaje"></textarea>
-            <button class="contact-box-all" id="contact-box-button-Attach">Adjuntar archivo</button>
-            <button class="contact-box-all" id="contact-box-button-send">ENVIAR</button>
+            <input class="contact-box-all" id="contact-box-txt-nombre" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input class="contact-box-all" id="contact-box-txt-email" type="text" name="email" id="email" placeholder="Correo electronico">
+            <input class="contact-box-all" id="contact-box-txt-tel" type="number" name="tel" id="tel" placeholder="Telefono fijo">
+            <input class="contact-box-all" id="contact-box-txt-cel" type="number" name="cel" id="cel" placeholder="Celular">
+            <input class="contact-box-all" id="contact-box-txt-adress" type="text" name="adress" id="adress" placeholder="Direccion">
+            <input class="contact-box-all" id="contact-box-txt-subject" type="text" name="subject" id="subject" placeholder="Asunto">
+            <textarea class="contact-box-all" id="contact-box-textArea-message" name="message" id="message" rows="2" placeholder="Escriba su mensaje"></textarea>
+            <button id="contact-box-button-Attach">Adjuntar archivo</button>
+            <button id="contact-box-button-send">ENVIAR</button>
         </form>
 
         <section class="grid-total-information">

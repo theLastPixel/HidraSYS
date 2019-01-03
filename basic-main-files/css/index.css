@@ -1,7 +1,6 @@
 .grid-total{
-    height: 1500px;
+    height: 120vh;
 }
-    
 
 /*
 ====================================================================================
@@ -10,11 +9,12 @@
 */
 .grid-total-information{
     background-color: rgba(0, 0, 0, 0.425);
-    grid-row: 8/21;
+    grid-row: 8/19;
     grid-column: 32/39;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6vw;
     color: white;
     padding: 10px;
     text-align: center;
+    overflow: hidden;
 }
