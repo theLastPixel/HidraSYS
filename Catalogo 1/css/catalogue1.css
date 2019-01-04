@@ -37,6 +37,9 @@ body{
 }
 
 
+
+
+
 .modal .content-modal{
     width: 100%;
     max-width: 500px;
@@ -62,15 +65,37 @@ body{
 }
 
 .modal h1{
-    padding: 7.5em;
+    padding: 10em;
     padding-left: 15px;
     padding-right: 15px;
     text-align: justify;
     color:  rgba(0,0,0,1);
     margin: 0;
     font-family: Impact;
-    font-size: 1.2vw;
+    font-size: 1.2vw;   
+
+}
+
+.text-costvalvdir{
     
+    position: absolute;
+    top: 185px;
+    left: 208px;
+    text-align: center;
+    font-family: Impact;
+    font-size: 2vw;
+    color: black; 
+}
+
+.text-iva{
+    
+    position: absolute;
+    top: 255px;
+    left: 210px;
+    text-align: center;
+    font-family: Impact;
+    font-size: 1vw;
+    color: black; 
 }
 
 .modal article{
@@ -108,7 +133,7 @@ body{
 }
 .modal:target .content-modal{
     top: 50px;
-    transition top 0.35s ease; 
+    transition: top 1.3s ease; 
 }
 
 
@@ -116,30 +141,94 @@ body{
     
     background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
     position: relative;
-    top: 60px;
+    top: 40px;
     left: 175px;
     width: 150px;
     height: 85px;
     border-radius: 15px;
-    
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
     
 }
 
+.img-money{
+    
+    background-image: url("../images/money-icon.png");
+    position: absolute;
+    top: 210px;
+    left: 140px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
 @media (width: 1920px){
    .modal article{
     height: 600px;
-    background: white;
+    background: white;     
+}
+      .text-iva{
+    position: absolute;
+    top: 280px;
+    left: 210px;
+}  
     
 }
+
+@media (max-width: 1200px){
+    
+   .modal article{
+    height: 350px;
+    background: white;
+}
+
+    
+.img-money{
+    top: 190px;
+    left: 150px;
+}
+    
+    .text-iva{
+    position: absolute;
+    top: 240px;
+    left: 210px;
+}
+.box-cantidad{
+    
+    position:relative;
+    top: 300px;
+    left: 350px;
+    margin: 0;
+    padding: 0;
+}
+    .btn-pagar1 {
+        top: 320px;
+        left: 15px;
+        
+    }
+    
+    .btn-scomprando1 {
+        top: 320px;
+        left: 15px;
+        
+    }
+    
+    .add-carrito {
+        top: 320px;
+        left: 15px;
+        
+    }
 }
 
 .btn-pagar1 {
-    position: relative;
-    left: 200px;
-    bottom: 85px;;
+    position: absolute;
+    left: 280px;
+    bottom: 40px;;
     cursor: pointer;
     grid-column: 4/5;
     grid-row: 9/10;
@@ -166,9 +255,9 @@ body{
 }
 
 .btn-scomprando1 {
-    position: relative;
-    left: -190px;
-    bottom: 62px;
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
     padding-top: 18px;
     cursor: pointer;
     background-color: #FFBD00; /* Green */
@@ -191,6 +280,107 @@ body{
   color: white;
 }
 
+.add-carrito {
+
+    color: black;
+    position: absolute;
+    top: 250px;
+    width: 135px;
+    height: 20px;
+    left: 337px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: .7em;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;;
+    border-color: black;
+    font-family: Arial Black;
+    background-color:#FFBD00;
+    display: inline-block;
+
+}
+
+.add-carrito img{
+    padding-left: 0px;
+    
+    
+    
+}
+.add-carrito:hover {
+    
+  background-color: #FFBD00; 
+  color: white;
+}
+
+.mas-cantidad{
+
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    margin: 0;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;;
+    border-color: black;
+    border-radius: 150px;
+    background-color:#FFCD70;
+     -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.mas-cantidad:hover {
+    background-color: green;
+}
+
+.menos-cantidad{
+    
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 350px;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;;
+    border-color: black;
+    border-radius: 150px;
+    background-color:#FFCD70;
+     -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.menos-cantidad:hover {
+    background-color: red;
+}
+
+.box-cantidad{
+    
+    position: absolute;
+    border-color: black;
+    color: black;
+    text-align: center;
+    font-family: arial black;
+    top:208px;
+    left:384px;
+    height:26px;
+    width: 55px;
+    border-radius: 15px;
+    
+}
 
 /*////////////////////////////////////////////////////////*/
 /*CONTAINER MAIN*/
@@ -356,18 +546,67 @@ border-radius: 200px 200px 200px 200px;
   grid-template-rows: repeat(10,2fr);
   grid-gap: 2px;
 
+  overflow-x: auto;
+  
+  border-radius: 5px;
+  
 }
 .sp1{
-
+    
     grid-template-columns: repeat(18,1fr);
     grid-template-rows: repeat(15,1fr);
     grid-column: 2/20;
-    grid-row:2/13;
+    grid-row:2/10;
     display: grid;
-    background-color: ; 
+    background-color: transparent;
+}
+
+
+
+
+a.control_prev{
+     grid-column: 2/3;
+     grid-row:6/6;
+     z-index: 999;
+    color: white;
+    text-decoration: none;
+     background: #2a2a2a;
+     font-weight: 600;
+     width: auto;
+     height: auto;
+     display: block;
+     opacity: 0.8;
+    }
+
+a.control_next {
+     grid-column: 19/20;
+     grid-row:6/6;
+     z-index: 999;
+    color: white;
+    text-decoration: none;
+     background: #2a2a2a;
+     font-weight: 600;
+     width: auto;
+     height: auto;
+     display: block;
+     opacity: 0.8;
+    
     
 }
 
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 12px 12px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 12px 0 0 12px;
+}
 .button-valv {
     cursor: pointer;
   grid-column: 4/5;
