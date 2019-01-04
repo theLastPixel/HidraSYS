@@ -3,6 +3,12 @@
                             CONTENEDORES PRINCIPALES                               
 ====================================================================================
 */
+
+html *{
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
 body{
     z-index: -1;
     width: 100%;
@@ -13,11 +19,6 @@ body{
     background-position: center 0px;
     margin: 0;
     padding: 0;
-}
-
-main > *{
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
 }
 
 .grid-total{
@@ -35,43 +36,52 @@ main > *{
 .grid-total-menu{
     grid-row: 1 / 5;
     grid-column: 1 / -1;
-    background-color: transparent;
     display: grid;
-    grid-template: 10fr 50fr 10fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
-    grid-gap: 2px;
+    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    background-color: #FFBD00;
 }
 
-.menu-box-lbl-all{
-    background-color: transparent;
+.menu-box-all{
     margin: 0;
     padding: 0;
-    grid-row: 2 / 3;
-    display: flex;
-    /* align-content: center; */
-    align-items: center;
-    justify-content: center;
+    grid-row: 1 / 2;
     font-size: 2.2vw;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
     text-decoration: none;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-
-.menu-box-lbl-all:hover{
-    color: #FFBD00;
-    text-decoration: underline;
+.menu-box-all:hover{
+    background-color: rgb(122, 32, 32);
+    color:white;
+    /* background-image: url("../imagenes/footer/Googleplus-color-1.png");
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    */
 }
+
 /*LOGO LFP Hidraulic Systems*/
 #menu-box-img-LFP{
     grid-column: 2 / 3;
-    justify-content: left;
+    display: flex;
+    justify-self: left;
+    align-self: center;
+}
+#menu-box-img-LFP:hover{
+    background-color: rgba(255, 187, 0, 0);
 }
 
 #menu-box-img-LFP img{
     height: auto;
-    width: 50%;
+    width: 90%;
 }
 
 /*HOME*/
@@ -99,10 +109,16 @@ main > *{
     grid-column: 11 / 12;
 }
 
+#menu-box-lbl-blog:hover{
+}
+
 /*LOGO LFP Hidraulic Systems*/
 #menu-box-img-carrito{
     grid-column: 13 / 14;
     justify-content: left;
+}
+#menu-box-img-carrito:hover{
+    background-color: rgba(255, 187, 0, 0);
 }
 
 #menu-box-img-carrito img{
