@@ -1,29 +1,29 @@
 /*
 ====================================================================================
-                               CONTENIDO PRINCIPAL                                 
+                            CONTENEDORES PRINCIPALES                               
 ====================================================================================
 */
-
-
-
-/* APLICACION A TODO EL CONTENIDO DEL MAIN */
-main{
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.8s;
+.grid-total{
+  height: 200vh;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
 
-/*#line {
-   
-    grid-column: 16/26;
-   grid-row: 2/10;
-     border: 5px;
-    border-style: solid;
-    color: #FFAF00;
-    
-    
-}*/
-
+body > * {
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+}
+/* 
+.grid-total-menu{
+  grid-row: 1 / 4;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+  background-color: #FFBD00;
+} */
 
 
 /*CONTAINER MAIN*/

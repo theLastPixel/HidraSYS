@@ -1,3 +1,8 @@
+/*
+====================================================================================
+                            CONTENEDORES PRINCIPALES                               
+====================================================================================
+*/
 .grid-total{
     height: 120vh;
 }
@@ -14,7 +19,7 @@ body > * {
 */
 
 .grid-total-content{
-    grid-row: 6 / 27;
+    grid-row: 6 / 23;
     grid-column: 3 / 39;
     display: grid;
     grid-template: 5fr 2fr / 1fr 1fr 1fr 1fr;
@@ -43,7 +48,4 @@ body > * {
     padding: 10px;
     text-align: center;
     align-self: center;
-    overflow: hidden;
 }
-
-

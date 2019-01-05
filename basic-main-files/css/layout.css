@@ -4,7 +4,7 @@
 ====================================================================================
 */
 
-html *{
+html * {
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
 }
@@ -32,9 +32,8 @@ body{
                                         HEADER                                
 ====================================================================================
 */
-
-.grid-total-menu{
-    grid-row: 1 / 5;
+ .grid-total-menu{
+    grid-row: 1 / 4;
     grid-column: 1 / -1;
     display: grid;
     grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
