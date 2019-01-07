@@ -1,45 +1,38 @@
-
-/*
-====================================================================================
-                            CONTENEDORES PRINCIPALES                               
-====================================================================================
-*/
- .grid-total{
-    height: 200vh;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
-body > * {
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-} */
-
-/* .grid-total-menu{
-    grid-row: 1 / 4;
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
-    background-color: #FFBD00;
-} */
-
 /*
 ====================================================================================
                                CONTENIDO PRINCIPAL                                 
 ====================================================================================
 */
 /* BODY */
+body{
+    
+    z-index: -1;
+    width: 100%;
+    background-image: url("../images/wallpaper.png");
+    background-size: cover;
+    background-attachment:fixed; 
+    background-position: center 0px;
+    text-align: center;
+    position: relative;
+    padding-top: 10em;
+    margin: 0;
+    padding: 0;
+    }
 
+.grid-total-menu{
+    
+    grid-row: 1 / 4;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    background-color: #FFBD00;
+}
 
-/*////////////////////MODAL///////////////////*/
+/*////////////////////////////////MODAL///////////////////*/
 
 .modal{
-    
     position: fixed;
-    top: -50vh;
+    top: -100vh;
     left: 0;
     z-index: 99999999;
     background: rgba(0,0,0,0.9);
@@ -60,6 +53,8 @@ body > * {
     margin-left: -250px;
     background: #FFBD00;
     z-index: 99999999;
+    
+    
 }
 
 .modal h2{
@@ -122,7 +117,10 @@ body > * {
     font-size: 1.5em;
     text-decoration: none;
 }
-
+.modal a:hover{
+  
+    
+}
 .modal:target{
     opacity: 1;
     top:0;   
@@ -131,8 +129,8 @@ body > * {
 .modal .btn-close-modal{
     position: absolute;
     left: 100px;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     z-index: 99999991;
 }
 .modal:target .content-modal{
@@ -143,7 +141,7 @@ body > * {
 
 .img-posicion{
     
-    background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
+    background-image: url("../images/valvdir.jpg");
     position: relative;
     top: 40px;
     left: 175px;
@@ -388,13 +386,14 @@ body > * {
 
 /*////////////////////////////////////////////////////////*/
 /*CONTAINER MAIN*/
-.grid-container-main{
+.grid-total{
   display: grid;
-  height: 1366px;
-    width:100%;
+  height: 200vh;
+  width:100%;
   grid-gap: 4px;
   grid-template: repeat(40,1fr)/repeat(40,1fr);
 }
+
 /*APLIACACION A TODOS LOS DIV DENTRO DE .grid-container-main*/
 /*
 ====================================================================================
@@ -450,7 +449,7 @@ grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 ====================================================================================
 */
 .img-valvdir{
-  background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
+  background-image: url("../images/valvdir.jpg");
   grid-column:4/5;
   grid-row:4/5;
   font-size: 1.5vw;
@@ -466,7 +465,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bombeng{
-    background-image: url("../images/Pagina-1/LineCardMobil/bombeng.jpg");
+    background-image: url("../images/bombeng.jpg");
     grid-column: 8/9;
   grid-row: 4/5;
   font-size: 1.5vw;
@@ -481,7 +480,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-pdcil{
-    background-image: url("../images/Pagina-1/LineCardMobil/pdcil.jpg");
+    background-image: url("../images/pdcil.jpg");
     grid-column: 12/13;
   grid-row: 4/5;
   font-size: 1.5vw;
@@ -496,7 +495,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bvenas{
-    background-image: url("../images/Pagina-1/LineCardMobil/bvenas.jpg");
+    background-image: url("../images/bvenas.jpg");
     grid-column: 16/17;
   grid-row: 4/5;
   font-size: 1.5vw;
@@ -756,7 +755,7 @@ a.control_next {
   /*Posicion sobre GRID MAIN*/
   grid-column: 6/36;
   grid-row: 28/42;
-    background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   /*Template GRID*/
   display: grid;
   grid-template-columns: repeat(20,1fr);
@@ -765,24 +764,24 @@ a.control_next {
   align-content: center;
   align-items: center;
 }
-
 /*//////////////Valvulas Direccionales///////////*/ 
 .img-vdir{
-    background-image: url("../images/Pagina-1/LineCardIndustrial/vdir.jpg");
+    background-image: url("../images/vdir.jpg");
     grid-column: 4/5;
-  grid-row: 4/6;
-  font-size: 1.5vw;
-  margin: 0;
-  left: 60px;
+    grid-row: 4/6;
+    font-size: 1.5vw;
+    margin: 0;
+    left: 60px;
     width: 150px;
     height: 150px;
     background-repeat: no-repeat;
-background-size: 100% 100%;
- box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
-border-radius: 200px 200px 200px 200px;     
+    background-size: 100% 100%;
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+    border-radius: 200px 200px 200px 200px;     
 }
 
 .text-vdir{
+    
     grid-column: 4/5;
     grid-row: 7/9;
     text-align: center;
@@ -820,7 +819,7 @@ border-radius: 200px 200px 200px 200px;
 /*////////////// Kit de materiales /////////////*/
 
 .img-ksmateriales{
-    background-image: url("../images/Pagina-1/LineCardIndustrial/ksmateriales.jpg");
+    background-image: url("../images/ksmateriales.jpg");
     grid-column: 8/9;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -871,7 +870,7 @@ border-radius: 200px 200px 200px 200px;
 /*//////////Motores hidraulicos para aplicaciones///////////*/
 
 .img-mha{
-    background-image: url("../images/Pagina-1/LineCardIndustrial/mha.jpg");
+    background-image: url("../images/mha.jpg");
     grid-column: 12/13;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -923,7 +922,7 @@ border-radius: 200px 200px 200px 200px;
 
 .img-fmv{
     
-    background-image: url("../images/Pagina-1/LineCardIndustrial/fmv.jpg");
+    background-image: url("../images/fmv.jpg");
     grid-column: 16/17;
     grid-row: 4/6;
     font-size: 1.5vw;
@@ -989,6 +988,7 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .rightrowlcin{
+    
     background-image: url("../images/right-row.png");
     grid-column: 18/19;
     grid-row: 5/6;
@@ -1015,8 +1015,10 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .paginacion ul li{
+    
     display:inline-block;
     margin-right: 0;
+
 }
 .paginacion ul li a {
     display: block;
