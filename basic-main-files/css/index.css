@@ -4,7 +4,7 @@
 ====================================================================================
 */
 .grid-total{
-    height: 120vh;
+    height: 170vh;
 }
 
 body > * {
@@ -19,13 +19,17 @@ body > * {
 */
 
 .grid-total-slider{
-    grid-row: 6 / 24;
+    grid-row: 1 / 25;
     grid-column: 1 / -1;
     display: grid;
+    height: 110vh;
     grid-template: 1fr / 1fr;
+    z-index: -1;
 }
 
 slider{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
     display: block;
     width: 100%;
     height: 100%;
@@ -44,8 +48,6 @@ slider{
 slider > * {
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
     background: #1f1f1f;
     animation: slide 12s infinite;
     overflow: hidden;
@@ -59,12 +61,16 @@ slider > * {
     align-self: center;
 }
 
+
+
 slide:nth-child(1){
     left: 0%;
-    animation-delay: 1s;
+    animation-delay: -1s;
     background-image: url(../imagenes/LFP/items-1.jpeg);
     background-size: cover;
     background-position: center;
+    height: auto;
+    width: 100%;
 }
 
 slide:nth-child(2){
@@ -72,6 +78,8 @@ slide:nth-child(2){
     background-image: url(../imagenes/LFP/items-2.jpeg);
     background-size: cover;
     background-position: center;
+    height: auto;
+    width: 100%;
 }
 
 slide:nth-child(3){
@@ -79,6 +87,8 @@ slide:nth-child(3){
     background-image: url(../imagenes/LFP/items-3.jpeg);
     background-size: cover;
     background-position: center;
+    height: auto;
+    width: 100%;
 }
 
 slide:nth-child(4){
@@ -87,15 +97,20 @@ slide:nth-child(4){
     background-image: url(../imagenes/LFP/items-4.jpeg);
     background-size: cover;
     background-position: center;
+    height: auto;
+    width: 100%;
 }
 
-slide p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vw;
-    text-align: center;
-    width: 100%; 
-    margin-top: 50%;
+slide > img {
+    width: 50%;
+    margin-top: 300px;
     color: #ffffff;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 @keyframes slide {
