@@ -3,36 +3,70 @@
                             CONTENEDORES PRINCIPALES                               
 ====================================================================================
 */
-
-.grid-total{
-    height: 100vh;
+/* .grid-total{
+    height: 200vh;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
 
+body > * {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.grid-total-menu{
+    grid-row: 1 / 4;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    background-color: #FFBD00;
+} */
 
 /*
 ====================================================================================
                                 DIV INFORMATION                                
 ====================================================================================
 */
-.grid-total-information{
-    background-color: rgba(0, 0, 0, 0.425);
-    grid-row: 10/22;
-    grid-column: 3/38;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw;
+.grid-total-menu-content{
+    grid-row: 4 / 27;
+    grid-column: 2 / 40;   
+}
+.content-titulo-historia{
+    font-family: Impact;
     color: white;
-    padding: 10px;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.content-parrafo-historia{
+    background-color: rgba(0, 0, 0, 0.452);
+    font-family: Impact;
+    padding: 20PX;
+    font-size: 1vw;
+    color: white;   
     text-align: justify;
 }
 
-.lbllogo{
-  grid-column: 20/20;
-  grid-row:8/8;
+/*
+====================================================================================
+                                    FOOTER                                
+====================================================================================
+*/
+
+.grid-total-footer{
+    grid-row: 40 / -1;
+    grid-column: 1 / -1;    
+    background-color: rgb(33, 33, 33);
     display: grid;
-    text-align: center;
-    font-size: 5vw;
-    font-family: Impact;
-    color: white;
-    opacity: 0.9;
+    grid-template: 1fr 10fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr/ repeat(30, 1fr);
+    grid-gap: 5px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
