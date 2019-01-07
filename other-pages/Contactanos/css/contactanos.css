@@ -1,0 +1,259 @@
+.grid-total{
+    height: 170vh;
+}
+
+/*
+====================================================================================
+                                HEADER (MODIFICADO DEL LAYOUT)                                
+====================================================================================
+*/
+
+
+.grid-total-menu{
+    grid-row: 1 / 4;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    background-color: #FFBD00;
+}
+
+/*
+====================================================================================
+                                    FORM CONTACTAR                              
+====================================================================================
+*/
+
+.grid-total-contact{
+    background-color: rgba(0, 0, 0, 0.24);
+    grid-row: 5/19;
+    grid-column: 5/37;
+    display: grid;
+    grid-template: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 5fr 1fr 3fr 1fr/ 5fr 10fr 10fr 10fr 10fr 5fr;
+    grid-gap: 5px;
+}
+
+.contact-box-all:focus{
+    border-bottom: solid #F39B53 .1rem;
+    text-decoration: none;
+}
+
+.contact-box-all{
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: transparent;
+    border-bottom-color: rgb(43, 43, 43);
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    color: white;
+}
+
+#contact-box-txt-nombre{
+    grid-row: 2 / 3;
+    grid-column: 2 / 6;
+}
+
+#contact-box-txt-email{
+    grid-row: 4 / 5;
+    grid-column: 2 / 6;
+}
+
+#contact-box-txt-tel{
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+}
+
+#contact-box-txt-cel{
+    grid-row: 8 / 9;
+    grid-column: 2 / 4;
+}
+
+#contact-box-txt-adress{
+    grid-row: 10 / 11;
+    grid-column: 2 / 6;
+}
+
+#contact-box-txt-subject{
+    grid-row: 12 / 13;
+    grid-column: 2 / 4;
+}
+
+#contact-box-textArea-message{
+    grid-row: 14 / 15;
+    grid-column: 2 / 6;
+}
+
+.grid-total-contact button{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+#contact-box-button-send{
+    grid-row: 16 / 17;
+    grid-column: 2 / 4;
+    background-color: #FFBD00; /* Green */
+    width: 70%;
+    height: 70%;
+    border: none;
+    color: white;
+    font-family: Arial black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+    font-size: 1vw;
+}
+
+
+#contact-box-button-Attach{
+    grid-row: 16 / 17;
+    grid-column: 4 / 6;
+    background-color: rgb(255, 8, 0);
+    width: 70%;
+    height: 70%;
+    border: none;
+    color: white;
+    font-family: Arial black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+    font-size: 1vw;
+    
+}
+
+/*
+====================================================================================
+                            GRID INFORMATION COMPANY                              
+====================================================================================
+*/
+
+.grid-total-information{
+    grid-row: 19 / 25;
+    grid-column: 5/37;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(20, 1fr);
+}
+
+.grid-total-information > * {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-total-information iframe{
+    grid-row: 1 / -1;
+    grid-column: 1 / 7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#tittle-LPF{
+    grid-row: 1 / 2;
+    grid-column: 11 / 18;
+    font-size: 2.5vw;
+}
+
+.titles{
+    font-size: 1.4vw;
+}
+
+.texts{
+    font-size: 0.9vw;
+}
+
+
+#tiitle-horarios{
+    grid-row: 5 / 6;
+    grid-column: 10 / 14;
+    
+}
+
+#text-horario{
+    grid-row: 6 / 7;
+    grid-column: 10 / 14;
+}
+
+#tiitle-correos{
+    grid-row: 5 / 6;
+    grid-column: 15 / 19;
+}
+
+#text-correos{
+    grid-row: 6 / 7;
+    grid-column:  15 / 19;
+}
+
+#tiitle-direccion{
+    grid-row: 9 / 10;
+    grid-column: 10 / 14;
+}
+
+#text-direccion{
+    grid-row: 10 / 11;
+    grid-column:  10 / 13;
+}
+
+#tiitle-telefono{
+    grid-row: 9 / 10;
+    grid-column: 15 / 19;
+}
+
+#text-telefono{
+    grid-row: 10 / 11;
+    grid-column: 15 / 18;
+}
+
+/*
+ L.F.P. Hydraulic Systems
+
+Horarios de Trabajo
+
+Lunes a Viernes de 8:00am a 6:00pm
+Sábados de 8:00am 12:00pm
+
+Correos electrónicos
+
+Compras: purchases@lfphydraulics.com
+Ventas: ventas@lfphydraulics com
+
+Dirección
+
+Misión de San Luis No. 6906
+Fracc. Padre Kino C.P. 22223
+
+Teléfono
+
+País: (52) Área: (664)
+Teléfono: (664) 978-2593 
+*/
+
+/*
+====================================================================================
+                                FOOTER (MODIFICADO DEL LAYOUT)                                
+====================================================================================
+*/
+
+.grid-total-footer{
+    grid-row: 30 / -1;
+    grid-column: 1 / -1;    
+    background-color: rgb(33, 33, 33);
+    display: grid;
+    grid-template: 1fr 10fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr/ repeat(30, 1fr);
+    grid-gap: 5px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}

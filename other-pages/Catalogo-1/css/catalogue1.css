@@ -1,39 +1,392 @@
+
+/*
+====================================================================================
+                            CONTENEDORES PRINCIPALES                               
+====================================================================================
+*/
+ .grid-total{
+    height: 200vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body > * {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+} */
+
+/* .grid-total-menu{
+    grid-row: 1 / 4;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    background-color: #FFBD00;
+} */
+
 /*
 ====================================================================================
                                CONTENIDO PRINCIPAL                                 
 ====================================================================================
 */
 /* BODY */
-body{
+
+
+/*////////////////////MODAL///////////////////*/
+
+.modal{
     
-    z-index: -1;
+    position: fixed;
+    top: -50vh;
+    left: 0;
+    z-index: 99999999;
+    background: rgba(0,0,0,0.9);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.modal .content-modal{
     width: 100%;
-    height: 100%;
-    background-image: url("../images/wallpaper.png");
-    background-size: cover;
-    background-attachment:fixed; 
-    background-position: center 0px;
-    }
-/* APLICACION A TODO EL CONTENIDO DEL MAIN */
-main{
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.8s;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    margin-top: 40px;
+    top: -100vh;
+    transition: top 0.35 ease;
+    margin-left: -250px;
+    background: #FFBD00;
+    z-index: 99999999;
+}
+
+.modal h2{
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-family: Impact;
+    
+}
+
+.modal h1{
+    padding: 10em;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    color:  rgba(0,0,0,1);
+    margin: 0;
+    font-family: Impact;
+    font-size: 1.2vw;   
+
+}
+
+.text-costvalvdir{
+    
+    position: absolute;
+    top: 185px;
+    left: 208px;
+    text-align: center;
+    font-family: Impact;
+    font-size: 2vw;
+    color: black; 
+}
+
+.text-iva{
+    
+    position: absolute;
+    top: 255px;
+    left: 210px;
+    text-align: center;
+    font-family: Impact;
+    font-size: 1vw;
+    color: black; 
+}
+
+.modal article{
+    height: 450px;
+    background: white;
+    
+}
+
+.close-modal{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 450px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.modal:target{
+    opacity: 1;
+    top:0;   
+}
+
+.modal .btn-close-modal{
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 99999991;
+}
+.modal:target .content-modal{
+    top: 50px;
+    transition: top 1.3s ease; 
 }
 
 
-/*#line {
-   
-    grid-column: 16/26;
-   grid-row: 2/10;
-     border: 5px;
+.img-posicion{
+    
+    background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
+    position: relative;
+    top: 40px;
+    left: 175px;
+    width: 150px;
+    height: 85px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+}
+
+.img-money{
+    
+    background-image: url("../images/money-icon.png");
+    position: absolute;
+    top: 210px;
+    left: 140px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+@media (width: 1920px){
+   .modal article{
+    height: 600px;
+    background: white;     
+}
+      .text-iva{
+    position: absolute;
+    top: 280px;
+    left: 210px;
+}  
+    
+}
+
+@media (max-width: 1200px){
+    
+   .modal article{
+    height: 350px;
+    background: white;
+}
+
+    
+.img-money{
+    top: 190px;
+    left: 150px;
+}
+    
+    .text-iva{
+    position: absolute;
+    top: 240px;
+    left: 210px;
+}
+.box-cantidad{
+    
+    position:relative;
+    top: 300px;
+    left: 350px;
+    margin: 0;
+    padding: 0;
+}
+    .btn-pagar1 {
+        top: 320px;
+        left: 15px;
+        
+    }
+    
+    .btn-scomprando1 {
+        top: 320px;
+        left: 15px;
+        
+    }
+    
+    .add-carrito {
+        top: 320px;
+        left: 15px;
+        
+    }
+}
+
+.btn-pagar1 {
+    position: absolute;
+    left: 280px;
+    bottom: 40px;;
+    cursor: pointer;
+    grid-column: 4/5;
+    grid-row: 9/10;
+    background-color: #048900; /* Green */
+    border: none;
+    color: white;
+    font-family: Arial black;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding-top: 18px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 16px;    
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.btn-pagar1:hover {
+  background-color: #07FF00; 
+  color: white;
+}
+
+.btn-scomprando1 {
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+    padding-top: 18px;
+    cursor: pointer;
+    background-color: #FFBD00; /* Green */
+    border: none;
+    color: white;
+    font-family: Arial black;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 16px;    
+    box-shadow: 13px 11px 10px 2px rgba(0,0,0,0.75);
+      -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.btn-scomprando1:hover {
+  background-color: #FFED00; 
+  color: white;
+}
+
+.add-carrito {
+
+    color: black;
+    position: absolute;
+    top: 250px;
+    width: 135px;
+    height: 20px;
+    left: 337px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: .7em;
+    text-decoration: none;
     border-style: solid;
-    color: #FFAF00;
+    border-width: 3px;;
+    border-color: black;
+    font-family: Arial Black;
+    background-color:#FFBD00;
+    display: inline-block;
+
+}
+
+.add-carrito img{
+    padding-left: 0px;
     
     
-}*/
+    
+}
+.add-carrito:hover {
+    
+  background-color: #FFBD00; 
+  color: white;
+}
 
+.mas-cantidad{
 
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    margin: 0;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;;
+    border-color: black;
+    border-radius: 150px;
+    background-color:#FFCD70;
+     -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
 
+.mas-cantidad:hover {
+    background-color: green;
+}
+
+.menos-cantidad{
+    
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 350px;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;;
+    border-color: black;
+    border-radius: 150px;
+    background-color:#FFCD70;
+     -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.menos-cantidad:hover {
+    background-color: red;
+}
+
+.box-cantidad{
+    
+    position: absolute;
+    border-color: black;
+    color: black;
+    text-align: center;
+    font-family: arial black;
+    top:208px;
+    left:384px;
+    height:26px;
+    width: 55px;
+    border-radius: 15px;
+    
+}
+
+/*////////////////////////////////////////////////////////*/
 /*CONTAINER MAIN*/
 .grid-container-main{
   display: grid;
@@ -51,7 +404,7 @@ main{
 .container-box-avatar{
     
   grid-column: 16/26;
-  grid-row: 2/10;
+  grid-row: 7/10;
     display: grid;
 grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 }
@@ -97,9 +450,9 @@ grid-template-columns: repeat(5,1fr)/repeat(5,1fr);
 ====================================================================================
 */
 .img-valvdir{
-  background-image: url("../images/valvdir.jpg");
+  background-image: url("../images/Pagina-1/LineCardMobil/valvdir.jpg");
   grid-column:4/5;
-  grid-row: 4/6;
+  grid-row:4/5;
   font-size: 1.5vw;
   margin: 0;
   padding: 0;
@@ -113,9 +466,9 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bombeng{
-    background-image: url("../images/bombeng.jpg");
+    background-image: url("../images/Pagina-1/LineCardMobil/bombeng.jpg");
     grid-column: 8/9;
-  grid-row: 4/6;
+  grid-row: 4/5;
   font-size: 1.5vw;
   margin: 0;
   left: 60px;
@@ -128,9 +481,9 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-pdcil{
-    background-image: url("../images/pdcil.jpg");
+    background-image: url("../images/Pagina-1/LineCardMobil/pdcil.jpg");
     grid-column: 12/13;
-  grid-row: 4/6;
+  grid-row: 4/5;
   font-size: 1.5vw;
   margin: 0;
   left: 60px;
@@ -143,9 +496,9 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .img-bvenas{
-    background-image: url("../images/bvenas.jpg");
+    background-image: url("../images/Pagina-1/LineCardMobil/bvenas.jpg");
     grid-column: 16/17;
-  grid-row: 4/6;
+  grid-row: 4/5;
   font-size: 1.5vw;
   margin: 0;
   left: 60px;
@@ -159,7 +512,7 @@ border-radius: 200px 200px 200px 200px;
 
 .leftrowlcm{
     background-image: url("../images/left-row.png");
-    grid-column: 2/2;
+    grid-column: 1/2;
     grid-row: 5/6;
     font-size: 1.5vw;
     margin: 0;
@@ -168,12 +521,12 @@ border-radius: 200px 200px 200px 200px;
     height: 70px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+    cursor: pointer;
 }
 
 .rightrowlcm{
     background-image: url("../images/right-row.png");
-    grid-column: 18/19;
+    grid-column: 21/21;
     grid-row: 5/6;
     font-size: 1.5vw;
     margin: 0;
@@ -182,26 +535,86 @@ border-radius: 200px 200px 200px 200px;
     height: 70px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-     
+     cursor: pointer;
 }
 
 .grid-container-lcmobil{
+    
   /*Posicion sobre GRID MAIN*/
     background-color: rgba(0,0,0,0.5);
   grid-column: 6/36;
-  grid-row: 6/20;
+  grid-row: 12/26;
   /*Template GRID*/
   display: grid;
-  grid-template-columns: repeat(20,1fr);
+  grid-template-columns: repeat(20,2fr);
   grid-template-rows: repeat(10,2fr);
   grid-gap: 2px;
-  align-content: center;
-  align-items: center;
+
+  overflow-x: auto;
+  
+  border-radius: 5px;
+  
+}
+.sp1{
+    
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(15,1fr);
+    grid-column: 2/20;
+    grid-row:2/10;
+    display: grid;
+    background-color: transparent;
 }
 
+
+
+
+a.control_prev{
+     grid-column: 2/3;
+     grid-row:6/6;
+     z-index: 999;
+    color: white;
+    text-decoration: none;
+     background: #2a2a2a;
+     font-weight: 600;
+     width: auto;
+     height: auto;
+     display: block;
+     opacity: 0.8;
+    }
+
+a.control_next {
+     grid-column: 19/20;
+     grid-row:6/6;
+     z-index: 999;
+    color: white;
+    text-decoration: none;
+     background: #2a2a2a;
+     font-weight: 600;
+     width: auto;
+     height: auto;
+     display: block;
+     opacity: 0.8;
+    
+    
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 12px 12px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 12px 0 0 12px;
+}
 .button-valv {
+    cursor: pointer;
   grid-column: 4/5;
-  grid-row: 9/10;
+  grid-row: 8/9;
  background-color: #FFBD00; /* Yellow */
   border: none;
     color: black;
@@ -223,9 +636,11 @@ border-radius: 200px 200px 200px 200px;
   color: black;
 }
 
+/*/////////////////////////////////////////////////////////////////////*/
+
 .button-pdcil {
   grid-column: 12/13;
-  grid-row: 9/10;
+  grid-row: 8/9;
  background-color: #FFBD00; /* Yellow */
   border: none;
     color: black;
@@ -249,7 +664,7 @@ border-radius: 200px 200px 200px 200px;
 
 .button-bvenas{
   grid-column: 16/17;
-  grid-row: 9/10;
+  grid-row: 8/9;
  background-color: #FFBD00; /* Yellow */
   border: none;
     color: black;
@@ -272,9 +687,9 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .text-valvdir{
-    grid-column: 4/5;
-    grid-row: 7/9;
-    text-align: center;
+    grid-column:4/5;
+    grid-row: 5/6;
+    text-align:center;
     font-size: 1vw;
     font-family: Arial Black;
     text-shadow: 3px 2px black;
@@ -283,7 +698,7 @@ border-radius: 200px 200px 200px 200px;
 
 .text-bombeng{
     grid-column: 8/9;
-    grid-row: 7/9;
+    grid-row: 5/6;
     text-align: center;
     font-size: 1vw;
     font-family: Arial Black;
@@ -293,7 +708,7 @@ border-radius: 200px 200px 200px 200px;
 
 .text-pdcil{
     grid-column: 12/13;
-    grid-row: 7/9;
+    grid-row: 5/6;
     text-align: center;
     font-size: 1vw;
     font-family: Arial Black;
@@ -302,9 +717,9 @@ border-radius: 200px 200px 200px 200px;
 }
 
 .text-bvenas{
-    grid-column: 16/17;
-    grid-row: 7/9;
-    text-align: center;
+    grid-column: 16/18;
+    grid-row: 5/6;
+    text-align: left;
     font-size: 1vw;
     font-family: Arial Black;
     color: white; 
@@ -313,7 +728,7 @@ border-radius: 200px 200px 200px 200px;
 
 .button-bombeng {
   grid-column: 8/9;
-  grid-row: 9/10;
+  grid-row: 8/9;
  background-color: #FFBD00; /* Yellow */
   border: none;
     color: black;
@@ -340,7 +755,7 @@ border-radius: 200px 200px 200px 200px;
 .grid-container-lcindustrial{
   /*Posicion sobre GRID MAIN*/
   grid-column: 6/36;
-  grid-row: 21/35;
+  grid-row: 28/42;
     background-color: rgba(0,0,0,0.5);
   /*Template GRID*/
   display: grid;
@@ -353,7 +768,7 @@ border-radius: 200px 200px 200px 200px;
 
 /*//////////////Valvulas Direccionales///////////*/ 
 .img-vdir{
-    background-image: url("../images/vdir.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/vdir.jpg");
     grid-column: 4/5;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -405,7 +820,7 @@ border-radius: 200px 200px 200px 200px;
 /*////////////// Kit de materiales /////////////*/
 
 .img-ksmateriales{
-    background-image: url("../images/ksmateriales.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/ksmateriales.jpg");
     grid-column: 8/9;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -456,7 +871,7 @@ border-radius: 200px 200px 200px 200px;
 /*//////////Motores hidraulicos para aplicaciones///////////*/
 
 .img-mha{
-    background-image: url("../images/mha.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/mha.jpg");
     grid-column: 12/13;
   grid-row: 4/6;
   font-size: 1.5vw;
@@ -508,7 +923,7 @@ border-radius: 200px 200px 200px 200px;
 
 .img-fmv{
     
-    background-image: url("../images/fmv.jpg");
+    background-image: url("../images/Pagina-1/LineCardIndustrial/fmv.jpg");
     grid-column: 16/17;
     grid-row: 4/6;
     font-size: 1.5vw;
@@ -590,7 +1005,7 @@ border-radius: 200px 200px 200px 200px;
 /*///////////////////////////////PAGINACION//////////////////////////////////////*/
 
 .paginacion{
-    margin: 20px 50px;    
+    margin: 150px 50px;    
 }
 
 .paginacion ul{
@@ -617,3 +1032,7 @@ border-radius: 200px 200px 200px 200px;
 .paginacion ul li a:hover{
     background-color: gray;
 }
+
+
+
+/*/////////////////////RESPONSIVE//////////////////////*/
