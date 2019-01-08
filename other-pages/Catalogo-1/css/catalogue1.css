@@ -117,10 +117,6 @@ body{
     font-size: 1.5em;
     text-decoration: none;
 }
-.modal a:hover{
-  
-    
-}
 .modal:target{
     opacity: 1;
     top:0;   
@@ -288,7 +284,7 @@ body{
     position: absolute;
     top: 250px;
     width: 135px;
-    height: 20px;
+    height: 50px;
     left: 337px;
     margin: 0;
     padding: 5px;
@@ -599,7 +595,7 @@ a.control_next {
 
 a.control_prev:hover, a.control_next:hover {
   opacity: 1;
-  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a.control_prev {

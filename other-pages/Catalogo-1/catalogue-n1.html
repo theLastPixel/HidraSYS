@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale= 1.0">
         <link rel="stylesheet" href="css/catalogue1.css">
         <link rel="stylesheet" href="../../basic-main-files/css/layout.css">
-        
+        <script src="../../basic-main-files/js/catalogo.js"></script>
         <title>L.F.P. Hydraulic Systems</title>
     </head>
     <body>
@@ -24,35 +24,33 @@
                 <a class="menu-box-all" id="menu-box-img-carrito" href="#"><img src="../../basic-main-files/imagenes/header/carrito.png" alt="CARRITO"></a>
             </header>
 
- <!--Vista previa Valvulas direccionales-->
- <aside id="modal" class="modal">
-        <div class="content-modal">
-        <header>
-        <a href="#" class="close-modal">
-            <img src="images/close.png" width="30px" height="30px">
-            </a>
-        <h2>Valvulas Direccionales</h2>
-        </header>
-       <article>
-           <a href="#" class="btn-close-modal"></a>
-           <div class="img-posicion"></div>
-           <div class="img-money"></div>
-           <div class="text-costvalvdir">Precio:<br>$3000</div>
-           <div class="text-iva">+ Iva incluido.</div>
-           <h1>Una válvula de control direccional es el control de extensión y retracción para sus cilindros hidráulicos. Provee la ruta del flujo de la bomba a los cilindros y una ruta de retorno de los cilindros a la reserva de fluido.  </h1>
-          <a href="#" class="btn-pagar1">Comprar</a>
-           <a href="#" class="btn-scomprando1">Seguir comprando</a>
-           <a href="#" class="add-carrito">
-           <img src="images/carrito.png" width="20px" height="20px">Agregar al carrito</a>
-            
-           <input type="text" class="box-cantidad">
-
-           <a href="#" class="mas-cantidad">+</a>
-           <a href="#" class="menos-cantidad">-</a>
-            </article>
-             </div>
-        
-    </aside>
+            <!--Vista previa Valvulas direccionales-->
+            <aside id="modal" class="modal">
+                <div class="content-modal">
+                    <header>
+                        <a href="#" class="close-modal">
+                            <img src="images/close.png" width="30px" height="30px">
+                        </a>
+                        <h2>Valvulas Direccionales</h2>
+                    </header>
+                    <article>
+                        <a href="#" class="btn-close-modal"></a>
+                        <div class="img-posicion"></div>
+                        <div class="img-money"></div>
+                        <div class="text-costvalvdir">Precio:<br>$3000</div>
+                        <div class="text-iva">+ Iva incluido.</div>
+                        <h1>Una válvula de control direccional es el control de extensión y retracción para sus cilindros hidráulicos. Provee la ruta del flujo de la bomba a los cilindros y una ruta de retorno de los cilindros a la reserva de fluido.  </h1>
+                        <a href="#" class="btn-pagar1">Comprar</a>
+                        <a href="#" class="btn-scomprando1">Seguir comprando</a>
+                        <button href="#" class="add-carrito" type="submit" onclick="addCarrito()" value="verificar">
+                            <img src="images/carrito.png" width="20px" height="20px">Agregar al carrito
+                        </button>
+                        <input type="text" id="cantidadCarrito" class="box-cantidad">
+                        <a href="#" class="mas-cantidad">+</a>
+                        <a href="#" class="menos-cantidad">-</a>
+                    </article>
+                </div>
+            </aside>
 <!--Vista previa Bombas de engranes-->
 <aside id="modal2" class="modal">
         <div class="content-modal">

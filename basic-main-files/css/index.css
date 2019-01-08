@@ -4,7 +4,7 @@
 ====================================================================================
 */
 .grid-total{
-    height: 170vh;
+    height: 150vh;
 }
 
 body > * {
@@ -19,10 +19,10 @@ body > * {
 */
 
 .grid-total-slider{
-    grid-row: 1 / 25;
+    grid-row: 3 / 25;
     grid-column: 1 / -1;
     display: grid;
-    height: 110vh;
+    height: 100vh;
     grid-template: 1fr / 1fr;
     z-index: -1;
 }
@@ -33,16 +33,9 @@ slider{
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #1f1f1f;
+    background-color: #1f1f1f00;
     overflow: hidden;
     position: relative;
-    border-radius: 0px 0px 0px 0px;
-    -moz-border-radius: 0px 0px 0px 0px;
-    -webkit-border-radius: 0px 0px 0px 0px;
-    border: 4px solid #000000;
-    -webkit-box-shadow: 23px 14px 11px 25px rgba(0,0,0,0.74);
-    -moz-box-shadow: 23px 14px 11px 25px rgba(0,0,0,0.74);
-    box-shadow: 23px 14px 11px 25px rgba(0,0,0,0.74);
 }
 
 slider > * {
@@ -69,7 +62,8 @@ slide:nth-child(1){
     background-image: url(../imagenes/LFP/items-1.jpeg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
 }
 
@@ -78,7 +72,8 @@ slide:nth-child(2){
     background-image: url(../imagenes/LFP/items-2.jpeg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
 }
 
@@ -87,7 +82,8 @@ slide:nth-child(3){
     background-image: url(../imagenes/LFP/items-3.jpeg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
 }
 
@@ -97,13 +93,13 @@ slide:nth-child(4){
     background-image: url(../imagenes/LFP/items-4.jpeg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
 }
 
 slide > img {
-    width: 50%;
-    margin-top: 300px;
+    width: 35%;
     color: #ffffff;
     justify-content: center;
     justify-items: center;
