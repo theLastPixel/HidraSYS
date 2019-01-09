@@ -26,10 +26,9 @@
     grid-template: repeat(30, 1fr) / repeat(40, 1fr);;
     background-color: rgba(0,0,0,0.5);    
 }
-
 .method-container h2{
 color: white;
-    font-size: 2.3vw;
+    font-size: 2vw;
     grid-row: 1/2;
     grid-column: 2/15;
 }
@@ -37,7 +36,7 @@ color: white;
 .btn-tcredito{
     border-style: solid;
     border-color:  #FFBD00;
-    grid-row: 1/16;
+    grid-row: 1/15;
     grid-column: 1/41;
     align-items: center;
     align-content: center;
@@ -61,7 +60,7 @@ color: white;
 .btn-tdebito{
     border-style: solid;
     border-color:  #FFBD00;
-    grid-row: 6/16;
+    grid-row: 4/18;
     grid-column: 1/41;
     align-items: center;
     align-content: center;
@@ -86,7 +85,7 @@ color: white;
 .btn-mercadopago{
     border-style: solid;
     border-color:  #FFBD00;
-    grid-row: 8/26;
+    grid-row: 12/21;
     grid-column: 1/41;
     align-items: center;
     align-content: center;
@@ -111,7 +110,7 @@ color: white;
 .btn-telectronica{
     border-style: solid;
     border-color:  #FFBD00;
-    grid-row: 20/26;
+    grid-row: 20/25;
     grid-column: 1/41;
     align-items: center;
     align-content: center;
@@ -135,7 +134,7 @@ color: white;
 .btn-pventanilla{
     border-style: solid;
     border-color:  #FFBD00;
-    grid-row: 27/35;
+    grid-row: 22/38;
     grid-column: 1/41;
     align-items: center;
     align-content: center;
@@ -179,8 +178,291 @@ color: white;
 .btn-paypal:hover {
   background-color:  #FFBD00; 
 }
+/*////////////////////////////////MODAL///////////////////*/
+
+.modal{
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    background: rgba(0,0,0,0.9);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.modal .content-modal{
+    width: 100%;
+    max-width: 800px;
+    position: fixed;
+    left: 50%;
+    margin-top: 40px;
+    top: -100vh;
+    transition: top 0.35 ease;
+    margin-left: -400px;
+    background: #FFBD00;
+    z-index: 99999999;
+    
+    
+}
+
+.modal h2{
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-family: Impact;
+    
+}
+
+.modal h1{
+    padding: 10em;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    color:  rgba(0,0,0,1);
+    margin: 0;
+    font-family: Impact;
+    font-size: 1.2vw;   
+}
+.modal article{
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(40, 1fr);
+    height: 465px;
+    background: white;
+    
+}
+
+.nom-completo{
+    color: black;
+    grid-row: 4/5;
+    grid-column:1/17;
+    font-size: 1.2vw;
+}
+
+.txt-nomcompleto{
+    grid-row: 5/6;
+    grid-column:5/17;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+
+.direccion{
+    color: black;
+    grid-row: 8/9;
+    grid-column:1/14;
+    font-size: 1.2vw;
+}
+
+.txt-direccion{
+    grid-row: 9/10;
+    grid-column:5/17;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+.close-modal{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 750px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.btn-visa{
+    background-image: url("../imagenes/visa-logo.png");
+    grid-row: 7/8;
+    grid-column:25/26;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+    background-color:#FFBD00 ;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: transparent;
+    height: 480%;
+    width: 40%;
+    margin-left:9px; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn-visa img{
+    width: 80%;
+    height: 100%;
+}
+.btn-visa:hover {
+  background-color: #91c4ff; 
+}
 
 
+.btn-mstcard{
+    background-image: url("../imagenes/mastercard.png");
+    grid-column:25/26;
+    grid-row: 7/8;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+    background-color: #FFBD00;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: transparent;
+    height: 480%;
+    width: 40%;
+    margin-left: 90px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ 
+}
+.btn-mstcard img{
+    width: 80%;
+    height: 100%;
+}
+.btn-mstcard:hover {
+  background-color: red; 
+}
+
+
+
+.type-card{
+    color: black;
+    grid-row: 4;
+    grid-column:25/26;
+    font-size: 1.2vw;
+}
+.txt-tjtcredito{
+    grid-row:5/6;
+    grid-column:25/26;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+
+.cod-postal{
+    color: black;
+    grid-row: 9/10;
+    grid-column:25/26;
+    font-size: 1.2vw;
+    
+}
+.txt-cod-postal{
+    grid-row: 10/11;
+    grid-column:25/26;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+
+.num-tel{
+    color: black;
+    grid-row: 12;
+    grid-column:3/14;
+    font-size: 1.2vw;
+    
+}
+
+.txt-tel{
+    grid-row: 13;
+    grid-column:5/15;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+.fecha-exp{
+    grid-row: 12;
+    grid-column:25/26;
+    color: black;
+    font-size: 1.2vw;
+}
+.txt-exp1{
+    text-align: center;
+    grid-row: 14/17;
+    grid-column:25/26;
+    width: 20%;
+    margin-left: 15px;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+    
+}
+.txt-exp2{
+    text-align: center;
+    grid-row: 14/17;
+    grid-column:25/26;
+    width: 20%;
+    margin-left: 90px;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+.ccv{
+    grid-row: 17/18;
+    grid-column:3/9;
+    font-size: 1.2vw;
+    
+}
+.txt-ccv{
+    grid-row: 19/20;
+    grid-column:5/13;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+.img-card{
+    background-image: url("../imagenes/creditcard2.png");
+    grid-row: 1/6;
+    grid-column:32/38;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.no-card{
+    grid-row: 17/18;
+    grid-column:25/26;
+    font-size: 1.2vw;
+}
+.txt-no-card{
+    grid-row: 19/20;
+    grid-column:25/26;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+}
+
+.btn-aceptar{
+    grid-column:30/38;
+    grid-row: 20/25;
+    box-shadow: 12px 6px 15px 1px rgba(0,0,0,0.4);
+    background-color: #048900;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.btn-aceptar:hover {
+  background-color: #07FF00; 
+  color: black;
+}
+.modal a:hover{
+  
+    
+}
+.modal:target{
+    opacity: 1;
+    top:0;   
+}
+
+.modal .btn-close-modal{
+    position: absolute;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.modal:target .content-modal{
+    top: 50px;
+    transition: top 1.3s ease; 
+}
+@media (width: 1920px){
+   .modal article{
+    height: 600px;
+    background: white;     
+}
+      .text-iva{
+    position: absolute;
+    top: 280px;
+    left: 210px;
+}  
+    
+}
 /*
 ====================================================================================
                                     FOOTER                                

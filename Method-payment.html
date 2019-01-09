@@ -13,6 +13,42 @@
     <title>Document</title>
 </head>
 <body>
+     <!--Vista previa Bombas de engranes-->
+        <aside id="modal" class="modal">
+                    <div class="content-modal">
+                    <header>
+                    <a href="#" class="close-modal">
+                    <img src="imagenes/close.png" width="30px" height="30px"></a>
+                    <h2>Llene los datos a continuacion</h2>
+                    </header>
+                   <article>
+                        <h2 class="nom-completo">Nombre completo</h2> 
+                        <input type="text" class="txt-nomcompleto">
+                        <h2 class="direccion">Direccion</h2> 
+                        <input type="text" class="txt-direccion">
+                       <h2 class="type-card">Tarjeta de credito</h2>
+                       <input type="text" class="txt-tjtcredito">
+                        <button type="submit" class="btn-visa"> 
+                        </button>
+                       <button type="submit" class="btn-mstcard">
+                       </button>
+                       <h2 class="cod-postal">Codigo Postal</h2>
+                       <input type="text" class="txt-cod-postal">
+                       <h2 class="num-tel">No. de telefono</h2>
+                       <input type="text" class="txt-tel">
+                       <h2 class="fecha-exp">Fecha de expiracion</h2>
+                       <input type="text" class="txt-exp1">
+                       <input type="text" class="txt-exp2">
+                        <h2 class="ccv">CCV</h2> 
+                        <input type="text" class="txt-ccv">
+                       <div class="img-card"></div>
+                       <h2 class="no-card">No. de tarjeta</h2>
+                       <input type="text" class="txt-no-card">
+                       <button type="submit" class="btn-aceptar">Aceptar</button>
+                    </article>
+                         </div>
+                    <a href="#" class="btn-close-modal"></a>      
+                </aside>  
     <main class="grid-total">
         <header class="grid-total-menu">
 
@@ -34,11 +70,12 @@
         <!-- ELEGIR METODO DE PAGO -->
         <div class="method-container">
             <h2>Seleccione el tipo de pago:</h2>
-        <div class="btn-tcredito">
-            <h3>Tarjet de credito</h3><img src="imagenes/creditcard.png">
-         </div>    
+        <a href="#modal" class="btn-tcredito">
+            <h3>Tarjeta de credito</h3><img src="imagenes/creditcard.png">
+         </a>    
         <div class="btn-tdebito">
-            <h3>Tarjet de debito</h3><img src="imagenes/debitcard.png">    
+            <h3>Tarjet de debito</h3><img src="imagenes/debitcard.png">
+            
         </div>
         <div class="btn-mercadopago">
             <h3>Mercado Pago</h3><img src="imagenes/mercadopago.png">
