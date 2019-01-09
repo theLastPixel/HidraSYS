@@ -1,0 +1,300 @@
+/*
+====================================================================================
+                            CONTENEDORES PRINCIPALES                               
+====================================================================================
+*/
+
+html *{
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    font-family: impact;
+}
+
+body{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagenes/fondo/wallpaper.png");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-total{
+    display: grid;
+    grid-template: repeat(40, 1fr) / repeat(40, 1fr);
+    grid-gap: 2px;
+}
+/*
+====================================================================================
+                                        HEADER                                
+====================================================================================
+*/
+ .grid-total-menu{
+    display: grid;
+    grid-template: 1fr / 5fr 20fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+    background-color: #FFBD00;
+}
+.menu-box-all{
+    margin: 0;
+    padding: 0;
+    grid-row: 1 / 2;
+    font-size: 2.2vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-box-all:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color:rgb(0, 0, 0);
+    /* background-image: url("../imagenes/footer/Googleplus-color-1.png");
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    */
+}
+
+/*LOGO LFP Hidraulic Systems*/
+#menu-box-img-LFP{
+    grid-column: 2 / 3;
+    display: flex;
+    justify-self: left;
+    align-self: center;
+}
+#menu-box-img-LFP:hover{
+    background-color: rgba(255, 187, 0, 0);
+}
+
+#menu-box-img-LFP img{
+    height: auto;
+    width: 80%;
+}
+
+/*HOME*/
+#menu-box-lbl-home{
+    grid-column: 3 / 4;
+    
+}
+/*ABOUT*/
+#menu-box-lbl-about{
+    grid-column: 5 / 6;
+}
+
+/*CATALOGUE*/
+#menu-box-lbl-catalogue{
+    grid-column: 7 / 8;
+}
+
+/*CONTACT*/
+#menu-box-lbl-contact{
+    grid-column: 9 / 10;
+}
+
+/*BLOG*/
+#menu-box-lbl-blog{
+    grid-column: 11 / 12;
+}
+
+/*LOGO LFP Hidraulic Systems*/
+#menu-box-img-carrito{
+    grid-column: 13 / 14;
+    justify-content: left;
+}
+#menu-box-img-carrito:hover{
+    background-color: rgba(255, 187, 0, 0);
+}
+
+#menu-box-img-carrito img{
+    height: auto;
+    width: 70%;
+}
+
+
+/*
+====================================================================================
+                                    CONTENIDO                                
+====================================================================================
+*/
+.product-container{
+    grid-column: 5/37; 
+    grid-row:9/25;
+    background-color: black;
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+    grid-gap: 2px;    
+    background-color: rgba(0,0,0,0.5);
+}
+.cart-title{
+    color: white;
+    font-family: Impact;
+    font-size: 4vw;
+    grid-row: 7/8;
+    grid-column: 19/20;
+}
+
+
+.valvdir-product img{
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 150px;
+    
+}
+/*
+====================================================================================
+                                    FOOTER                                
+====================================================================================
+*/
+
+.grid-total-footer{
+    background-color: rgb(33, 33, 33);
+    display: grid;
+    grid-template: 1fr 10fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr/ repeat(30, 1fr);
+    grid-gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box-all{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.3vw;
+    display: flex;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    
+}
+
+.footer-box-all:focus{
+    border: 2px solid #FFBD00;
+}
+
+/*INFORMATION*/
+#footer-box-text-information{
+    font-size: 1vw;
+    grid-row: 2/3; 
+    grid-column: 1/-1;
+    text-align: center;
+    border: 2px solid rgba(172, 25, 25, 0);
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+/*///////////////NOMBRE//////////////*/
+#footer-box-lbl-name{
+    align-items: center;
+    grid-row: 4/5; grid-column: 7/9;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-box-txt-name{
+    grid-row: 4/5; grid-column: 9/15;
+    border: 2px solid white;
+}
+
+/*///////////////EMAIL//////////////*/
+#footer-box-lbl-email{
+    align-items: center;
+    grid-row: 4/5; grid-column: 18/20;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+}
+#footer-box-txt-email{
+    grid-row: 4/5; grid-column: 20/26;
+    border: 2px solid white;
+}
+
+/*///////////////MENSAJE//////////////*/
+#footer-box-lbl-message{
+    align-items: center;
+    grid-row: 6/7; grid-column: 7/9;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+}
+#footer-box-txtArea-message{
+    grid-row: 6/7; grid-column: 9/28;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/*///////////////ENVIAR//////////////*/
+#footer-box-btn-send{
+    grid-row: 8/9; grid-column: 13/19;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/*///////////////ICONS//////////////*/
+.footer-box-all-icons{
+    grid-row: 10/11;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footer-box-all-icons img{
+    height: auto;
+    width: 100%;
+}
+
+.footer-box-all-icons:hover{
+    -webkit-filter: none;
+    filter: none;
+}
+
+/*FACEBOOK*/
+#footer-box-icon-facebook{
+    grid-column: 14/15;    
+}
+
+/*YOUTUBE*/
+#footer-box-icon-youtube{
+    grid-column: 15/16;
+}
+/*WHATSAPP*/
+#footer-box-icon-whatsapp{
+    grid-column: 16/17;
+}
+
+/*BLOG*/
+#footer-box-icon-blog{
+    grid-column: 17/18;
+}
+
+
+/*COPYRIGHT*/
+#footer-box-text-copyRight{
+    grid-row: 12/13; 
+    grid-column: 1/-1;
+    font-size: 1.2vw;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
