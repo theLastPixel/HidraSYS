@@ -279,7 +279,6 @@ font-size: 1.4vw;
 .btn-eliminar2:hover {
     background-color: red;
 }
-
 .cantidad-producto2 h2{
     color: Black;
     width: 250px;
@@ -289,10 +288,8 @@ font-size: 1.4vw;
     text-align: center;
     grid-row:1/2; 
     grid-column: 5/6;
-    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.82);
-    
+    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.82);   
 }
-
 .cantidad-producto3{
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(10, 1fr);
@@ -302,8 +299,6 @@ font-size: 1.4vw;
     grid-row: 9/12;
     grid-column:11/19;
 }
-
-
 .cantidad-producto3 h2{
     color: Black;
     width: 250px;
@@ -313,8 +308,7 @@ font-size: 1.4vw;
     text-align: center;
     grid-row:1/2; 
     grid-column: 5/6;
-    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.82);
-    
+    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.82);   
 }
 .cantidad-producto3 p{
      color: white;
@@ -346,7 +340,6 @@ font-size: 1.4vw;
 .btn-eliminar3:hover {
     background-color: red;
 }
-
 .btn-siguiente{
     grid-row: 13/14;
     grid-column: 18/20;
@@ -367,7 +360,6 @@ font-size: 1.4vw;
                                     FOOTER                                
 ====================================================================================
 */
-
 .grid-total-footer{
     grid-row: 60 / -1;
     grid-column: 1 / -1;
