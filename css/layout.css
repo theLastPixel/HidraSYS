@@ -112,35 +112,15 @@ body{
 #menu-box-img-carrito:hover{
     background-color: rgba(255, 187, 0, 0);
 }
-
 #menu-box-img-carrito img{
     height: auto;
     width: 70%;
 }
-
-
 /*
 ====================================================================================
                                     CONTENIDO                                
 ====================================================================================
 */
-.product-container{
-    grid-column: 5/37; 
-    grid-row:9/25;
-    background-color: black;
-    display: grid;
-    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
-    grid-gap: 2px;    
-    background-color: rgba(0,0,0,0.5);
-}
-.cart-title{
-    color: white;
-    font-family: Impact;
-    font-size: 4vw;
-    grid-row: 7/8;
-    grid-column: 19/20;
-}
-
 
 .valvdir-product img{
 
@@ -150,6 +130,7 @@ body{
     height: 150px;
     
 }
+
 /*
 ====================================================================================
                                     FOOTER                                
