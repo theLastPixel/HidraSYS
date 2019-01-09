@@ -138,7 +138,8 @@ font-size: 1.4vw;
 }
 .cantidad-producto h2{
     color: Black;
-    height: 50px;
+    width: 250px;
+    height: 70px;
     background-color: #FFBD00;
     font-size: 3vw;
     text-align: center;
@@ -284,7 +285,8 @@ font-size: 1.4vw;
 
 .cantidad-producto2 h2{
     color: Black;
-    height: 50px;
+    width: 250px;
+    height: 70px;
     background-color: #FFBD00;
     font-size: 3vw;
     text-align: center;
@@ -307,7 +309,8 @@ font-size: 1.4vw;
 
 .cantidad-producto3 h2{
     color: Black;
-    height: 50px;
+    width: 250px;
+    height: 70px;
     background-color: #FFBD00;
     font-size: 3vw;
     text-align: center;
