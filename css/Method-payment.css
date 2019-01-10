@@ -14,8 +14,16 @@
 ====================================================================================
 */
  .grid-total-menu{
+    grid-row: 1 / 7;
+    grid-column: 1 / -1;
+}
+
+@media (width: 1920px){
+    .grid-total-menu{
     grid-row: 1 / 5;
     grid-column: 1 / -1;
+}
+
 }
 
 /*////////////Contenedor de elementos//////////////////*/
@@ -27,7 +35,7 @@
     background-color: rgba(0,0,0,0.5);    
 }
 .method-container h2{
-color: white;
+    color: white;
     font-size: 2vw;
     grid-row: 1/2;
     grid-column: 2/15;
